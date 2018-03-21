@@ -52,5 +52,13 @@ namespace BabysDiary
             Loading.Visibility = Visibility.Hidden;
             RealTimeDiet.Visibility = Visibility.Hidden;
         }
+
+
+        private void aImage_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            setAllInvisible();
+            Login.Visibility = Visibility.Visible;
+
+        }
     }
 }
