@@ -7,24 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="600">
     <Grid x:Name="MainGrid" Width="600" Height="800" Background="#FFFBFDFD">
-        <Grid x:Name="Login" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
+        <Grid x:Name="Login" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
             <TextBlock x:Name="title" HorizontalAlignment="Center" Height="182.461" Margin="88.373,70.543,72.771,0" TextWrapping="Wrap" Text="Baby's Diary" VerticalAlignment="Top" Width="438.856" FontWeight="Bold" FontSize="72"/>
-            <Image x:Name="titlePicture" HorizontalAlignment="Left" Height="227.179" Margin="162.113,168.112,0,0" VerticalAlignment="Top" Width="225.194" Source="babyTitle.png">
-
-            </Image>
+            <Image x:Name="titlePicture" HorizontalAlignment="Left" Height="227.179" Margin="162.113,168.112,0,0" VerticalAlignment="Top" Width="225.194" Source="babyTitle.png"/>
             <TextBox x:Name="UserName" HorizontalAlignment="Left" Height="31.88" Margin="162.113,425.291,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top" Width="225.194"/>
             <TextBox x:Name="Password" HorizontalAlignment="Left" Height="33.915" Margin="162.113,491.764,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Width="225.194"/>
             <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Height="23.741" Margin="194.671,566.376,0,0" VerticalAlignment="Top" Width="164.147" Click="LoginButton_Click"/>
             <Button x:Name="RegisterButton" Content="Register" HorizontalAlignment="Left" Height="23.062" Margin="194.671,611.144,0,0" VerticalAlignment="Top" Width="164.147"/>
         </Grid>
-        <Grid x:Name="Register" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
-            <TextBlock HorizontalAlignment="Left" Height="172.212" Margin="108.29,74.047,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285.76"><Run Text="another"/><LineBreak/><Run/></TextBlock>
-            <TextBlock HorizontalAlignment="Left" Height="40.5" Margin="46.109,33.547,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76.5"><Run Text="TextBlock">
-                    <Run.Background>
-                        <ImageBrush/>
-                    </Run.Background>
-                </Run></TextBlock>
-        </Grid>
+        <Grid x:Name="Register" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
         <Grid x:Name="SetUp" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
             <Grid x:Name="SetUp1" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="SetUp2" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
@@ -32,9 +23,10 @@
             <Grid x:Name="SetUp4" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="SetUp5" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
         </Grid>
-        <Grid x:Name="Home" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+        <Grid x:Name="Home" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
             <TextBlock HorizontalAlignment="Left" Height="126" Margin="122.609,267.547,0,0" TextWrapping="Wrap" Text="work" VerticalAlignment="Top" Width="349.5"/>
             <Image x:Name="aImage" HorizontalAlignment="Left" Height="276" Margin="187.109,195.547,0,0" VerticalAlignment="Top" Width="204" MouseLeftButtonDown="aImage_MouseLeftButtonDown" Source="home.png"/>
+            <Image x:Name="back" HorizontalAlignment="Left" Height="96" Margin="52.109,60.547,0,0" VerticalAlignment="Top" Width="144" Source="back.jpg" RenderTransformOrigin="0.778,0.512"/>
         </Grid>
         <Grid x:Name="DietPlan" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
             <Grid x:Name="Diet" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
