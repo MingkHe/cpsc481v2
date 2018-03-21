@@ -7,16 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="600">
     <Grid x:Name="MainGrid" Width="600" Height="800" Background="#FFFBFDFD">
-        <Grid x:Name="Login" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+        <Grid x:Name="Login" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
             <TextBlock x:Name="title" HorizontalAlignment="Center" Height="182.461" Margin="88.373,70.543,72.771,0" TextWrapping="Wrap" Text="Baby's Diary" VerticalAlignment="Top" Width="438.856" FontWeight="Bold" FontSize="72"/>
-            <Image x:Name="titlePicture" HorizontalAlignment="Left" Height="263.179" Margin="111.919,202.132,0,0" VerticalAlignment="Top" Width="343.217" Source="babyTitle.png">
-                <Image.OpacityMask>
-                    <ImageBrush/>
-                </Image.OpacityMask>
+            <Image x:Name="titlePicture" HorizontalAlignment="Left" Height="227.179" Margin="162.113,168.112,0,0" VerticalAlignment="Top" Width="225.194" Source="babyTitle.png">
+
             </Image>
             <TextBox x:Name="UserName" HorizontalAlignment="Left" Height="31.88" Margin="162.113,425.291,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top" Width="225.194"/>
             <TextBox x:Name="Password" HorizontalAlignment="Left" Height="33.915" Margin="162.113,491.764,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Width="225.194"/>
-            <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Height="23.741" Margin="194.671,566.376,0,0" VerticalAlignment="Top" Width="164.147"/>
+            <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Height="23.741" Margin="194.671,566.376,0,0" VerticalAlignment="Top" Width="164.147" Click="LoginButton_Click"/>
             <Button x:Name="RegisterButton" Content="Register" HorizontalAlignment="Left" Height="23.062" Margin="194.671,611.144,0,0" VerticalAlignment="Top" Width="164.147"/>
         </Grid>
         <Grid x:Name="Register" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
@@ -27,7 +25,9 @@
             <Grid x:Name="SetUp4" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="SetUp5" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
         </Grid>
-        <Grid x:Name="Home" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
+        <Grid x:Name="Home" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+            <TextBlock HorizontalAlignment="Left" Height="126" Margin="122.609,267.547,0,0" TextWrapping="Wrap" Text="work" VerticalAlignment="Top" Width="349.5"/>
+        </Grid>
         <Grid x:Name="DietPlan" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
             <Grid x:Name="Diet" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="Analysis" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
@@ -68,7 +68,7 @@
             <Grid x:Name="Supp" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
         </Grid>
         <Grid x:Name="Loading" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-        <Grid x:Name="RealTimeDiet" HorizontalAlignment="Left" Height="800" Margin="-10,-112.466,0,0" VerticalAlignment="Top" Width="600"/>
+        <Grid x:Name="RealTimeDiet" HorizontalAlignment="Left" Height="800" Margin="-0.609,-10,0,0" VerticalAlignment="Top" Width="600"/>
 
     </Grid>
 </Window>
