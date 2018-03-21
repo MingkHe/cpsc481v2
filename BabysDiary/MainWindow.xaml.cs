@@ -23,6 +23,34 @@ namespace BabysDiary
         public MainWindow()
         {
             InitializeComponent();
+            setAllInvisible();
+            Login.Visibility = Visibility.Visible;
+        }
+
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            setAllInvisible();
+            Home.Visibility = Visibility.Visible;
+        }
+
+        private void setAllInvisible()
+        {
+            Login.Visibility = Visibility.Hidden;
+            Register.Visibility = Visibility.Hidden;
+            SetUp.Visibility = Visibility.Hidden;
+            Home.Visibility = Visibility.Hidden;
+            DietPlan.Visibility = Visibility.Hidden;
+            SleepCycle.Visibility = Visibility.Hidden;
+            Reminder.Visibility = Visibility.Hidden;
+            Record.Visibility = Visibility.Hidden;
+            Report.Visibility = Visibility.Hidden;
+            Camera.Visibility = Visibility.Hidden;
+            Profile.Visibility = Visibility.Hidden;
+            Memory.Visibility = Visibility.Hidden;
+            Album.Visibility = Visibility.Hidden;
+            Setting.Visibility = Visibility.Hidden;
+            Loading.Visibility = Visibility.Hidden;
+            RealTimeDiet.Visibility = Visibility.Hidden;
         }
     }
 }
