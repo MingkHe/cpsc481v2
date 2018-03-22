@@ -129,6 +129,7 @@
     <Resource Include="babyCrawling.png" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Resource Include="loading.png" />
   </ItemGroup>
   <ItemGroup>
@@ -172,6 +173,69 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="walk.png" />
+=======
+    <Resource Include="left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="rightArrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="boy5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="girl2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="custom1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cus2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cus3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="camera2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="milk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sleep.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="reminder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="record.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="memory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="reminder2.png" />
+    <Resource Include="eatwell_plate2.jpg" />
+    <Resource Include="eatwell_plate.jpg" />
+    <Content Include="pie chart.jfif" />
+    <Resource Include="eggplant.png" />
+    <Resource Include="vege.png" />
+    <Resource Include="add.png" />
+    <Content Include="babycrawing.jfif" />
+    <Resource Include="bread.png" />
+    <Resource Include="dietMilk.png" />
+>>>>>>> b25f91f4e12a9aa85a22d77beab12ca0b7979001
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
