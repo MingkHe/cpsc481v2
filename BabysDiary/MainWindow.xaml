@@ -17,7 +17,14 @@
             <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Height="23.741" Margin="194.671,566.376,0,0" VerticalAlignment="Top" Width="164.147" Click="LoginButton_Click"/>
             <Button x:Name="RegisterButton" Content="Register" HorizontalAlignment="Left" Height="23.062" Margin="194.671,611.144,0,0" VerticalAlignment="Top" Width="164.147"/>
         </Grid>
-        <Grid x:Name="Register" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
+        <Grid x:Name="Register" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+            <TextBlock HorizontalAlignment="Left" Height="172.212" Margin="108.29,74.047,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285.76"><Run Text="another"/><LineBreak/><Run/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Height="40.5" Margin="46.109,33.547,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76.5"><Run Text="TextBlock">
+                    <Run.Background>
+                        <ImageBrush/>
+                    </Run.Background>
+                </Run></TextBlock>
+        </Grid>
         <Grid x:Name="SetUp" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
             <Grid x:Name="SetUp1" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="SetUp2" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
@@ -25,52 +32,57 @@
             <Grid x:Name="SetUp4" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="SetUp5" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
         </Grid>
-        <Grid x:Name="Home" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+        <Grid x:Name="Home" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
             <TextBlock HorizontalAlignment="Left" Height="126" Margin="122.609,267.547,0,0" TextWrapping="Wrap" Text="work" VerticalAlignment="Top" Width="349.5"/>
             <Image x:Name="aImage" HorizontalAlignment="Left" Height="155.872" Margin="10,678.131,0,-34.003" VerticalAlignment="Top" Width="71.445" MouseLeftButtonDown="aImage_MouseLeftButtonDown" Source="home.png"/>
             <Image x:Name="back" HorizontalAlignment="Left" Height="60.79" Margin="10,10,0,0" VerticalAlignment="Top" Width="86.007" Source="back.jpg" RenderTransformOrigin="0.778,0.512"/>
         </Grid>
-        <Grid x:Name="DietPlan" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+        <Grid x:Name="DietPlan" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
             <Grid x:Name="Diet" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="Analysis" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="Change" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
         </Grid>
-        <Grid x:Name="SleepCycle" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+        <Grid x:Name="SleepCycle" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
             <Grid x:Name="Today" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="Week" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
         </Grid>
-        <Grid x:Name="Reminder" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-        <Grid x:Name="Record" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+        <Grid x:Name="Reminder" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True"/>
+        <Grid x:Name="Record" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
             <Grid x:Name="HeightAndWeight" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="Nutrition" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="Sleeping" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
         </Grid>
-        <Grid x:Name="Report" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+        <Grid x:Name="Report" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
             <Grid x:Name="ReportH" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="ReportW" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="ReportResult" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="ReportEval" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
         </Grid>
         <Grid x:Name="Camera" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
-            <Grid x:Name="TakePhoto" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-            <Grid x:Name="SavePhoto" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
+            <Grid x:Name="TakePhoto" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+                <Image x:Name="CameraIcon" HorizontalAlignment="Left" Height="89.346" Margin="253.468,634.501,0,0" VerticalAlignment="Top" Width="132.237" Source="camera.png"/>
+                <Image x:Name="CameraIcon_Copy" HorizontalAlignment="Left" Height="55.689" Margin="10,708.226,0,0" VerticalAlignment="Top" Width="85.758" Source="home.png"/>
+            </Grid>
+            <Grid x:Name="SavePhoto" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
+                <Image x:Name="CameraIcon_copy" HorizontalAlignment="Left" Height="227.179" Margin="187.756,463.011,0,0" VerticalAlignment="Top" Width="225.194" Source="babyTitle.png"/>
+            </Grid>
         </Grid>
-        <Grid x:Name="Profile" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-        <Grid x:Name="Memory" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+        <Grid x:Name="Profile" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True"/>
+        <Grid x:Name="Memory" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
             <Grid x:Name="Msit" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="Mcrawl" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="Mstand" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="Mwalk" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
         </Grid>
-        <Grid x:Name="Album" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-        <Grid x:Name="Setting" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+        <Grid x:Name="Album" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True"/>
+        <Grid x:Name="Setting" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
             <Grid x:Name="Set" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="Theme" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="About" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
             <Grid x:Name="Supp" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
         </Grid>
-        <Grid x:Name="Loading" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-        <Grid x:Name="RealTimeDiet" HorizontalAlignment="Left" Height="800" Margin="-0.609,-10,0,0" VerticalAlignment="Top" Width="600"/>
+        <Grid x:Name="Loading" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True"/>
+        <Grid x:Name="RealTimeDiet" HorizontalAlignment="Left" Height="800" Margin="-0.609,-10,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True"/>
 
     </Grid>
 </Window>
