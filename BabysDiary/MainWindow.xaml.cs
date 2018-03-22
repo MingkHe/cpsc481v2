@@ -565,5 +565,41 @@ namespace BabysDiary
             SetDietPlanInvisible();
             Change.Visibility = Visibility.Visible;
         }
+
+        private void Image_MouseEnter(object sender, MouseEventArgs e)
+        {
+            message_Copy.Visibility = Visibility.Visible;
+            messageText_Copy.Visibility = Visibility.Visible;
+        }
+
+        private void Image_MouseLeave(object sender, MouseEventArgs e)
+        {
+            message_Copy.Visibility = Visibility.Hidden;
+            messageText_Copy.Visibility = Visibility.Hidden;
+        }
+
+        private void Image_MouseEnter_1(object sender, MouseEventArgs e)
+        {
+            message_Copy1.Visibility = Visibility.Visible;
+            messageText_Copy1.Visibility = Visibility.Visible;
+        }
+
+        private void Image_MouseLeave_1(object sender, MouseEventArgs e)
+        {
+            message_Copy1.Visibility = Visibility.Hidden;
+            messageText_Copy1.Visibility = Visibility.Hidden;
+        }
+
+        private void Image_MouseEnter_2(object sender, MouseEventArgs e)
+        {
+            message_Copy2.Visibility = Visibility.Visible;
+            messageText_Copy2.Visibility = Visibility.Visible;
+        }
+
+        private void Image_MouseLeave_2(object sender, MouseEventArgs e)
+        {
+            message_Copy2.Visibility = Visibility.Hidden;
+            messageText_Copy2.Visibility = Visibility.Hidden;
+        }
     }
 }

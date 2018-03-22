@@ -75,19 +75,28 @@
                 <Rectangle Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="297" Margin="117.218,271.094,0,0" Stroke="Black" VerticalAlignment="Top" Width="373.5"/>
             </Grid>
         </Grid>
-        <Grid x:Name="Home" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True">
+        <Grid x:Name="Home" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
             <Image HorizontalAlignment="Left" Height="55.5" Margin="37.109,80.047,0,0" VerticalAlignment="Top" Width="58.5" Source="milk.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_3"/>
             <Image HorizontalAlignment="Left" Height="66" Margin="37.109,195.547,0,0" VerticalAlignment="Top" Width="58.5" Source="sleep.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_5"/>
-            <Image HorizontalAlignment="Left" Height="52.5" Margin="37.109,318.547,0,0" VerticalAlignment="Top" Width="58.5" Source="reminder.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_7"/>
+            <Image HorizontalAlignment="Left" Height="52.5" Margin="37.109,318.547,0,0" VerticalAlignment="Top" Width="58.5" Source="reminder.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_7" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave"/>
             <Image HorizontalAlignment="Left" Height="79.5" Margin="73.109,632.047,0,0" VerticalAlignment="Top" Width="87" Source="camera2.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_16"/>
-            <Image HorizontalAlignment="Left" Height="58.5" Margin="196.109,653.047,0,0" VerticalAlignment="Top" Width="60" Source="record.png" RenderTransformOrigin="0.55,0.308" MouseLeftButtonDown="Image_MouseLeftButtonDown_10"/>
+            <Image HorizontalAlignment="Left" Height="58.5" Margin="196.109,653.047,0,0" VerticalAlignment="Top" Width="60" Source="record.png" RenderTransformOrigin="0.55,0.308" MouseLeftButtonDown="Image_MouseLeftButtonDown_10" MouseEnter="Image_MouseEnter_1" MouseLeave="Image_MouseLeave_1"/>
             <Image HorizontalAlignment="Left" Height="58.5" Margin="313.109,653.047,0,0" VerticalAlignment="Top" Width="60" Source="profile.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_26"/>
-            <Image HorizontalAlignment="Left" Height="58.5" Margin="446.609,653.047,0,0" VerticalAlignment="Top" Width="66" Source="memory.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_20"/>
-            <Image HorizontalAlignment="Left" Height="96" Margin="479.609,494.047,0,0" VerticalAlignment="Top" Width="84" Source="setting.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_22"/>
+            <Image HorizontalAlignment="Left" Height="58.5" Margin="446.609,653.047,0,0" VerticalAlignment="Top" Width="66" Source="memory.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_20" MouseEnter="Image_MouseEnter_2" MouseLeave="Image_MouseLeave_2"/>
+            <Image HorizontalAlignment="Left" Height="96" Margin="480,494.047,0,0" VerticalAlignment="Top" Width="84" Source="setting.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_22"/>
             <Image HorizontalAlignment="Left" Height="142.5" Margin="432.5,38.047,0,0" VerticalAlignment="Top" Width="157.5" Source="sun.png"/>
             <Image HorizontalAlignment="Left" Height="286.8" Margin="160.109,261.547,0,0" VerticalAlignment="Top" Width="270.2" Source="babyMain.jpg" MouseEnter="message_MouseEnter" MouseLeave="message_MouseLeave" MouseLeftButtonDown="Image_MouseLeftButtonDown_24"/>
             <Image x:Name="message" HorizontalAlignment="Left" Height="99.6" Margin="329.909,217.147,0,0" VerticalAlignment="Top" Width="148.5" Source="message2.png"/>
             <TextBlock x:Name="messageText" HorizontalAlignment="Left" Height="43.2" Margin="345.109,241.147,0,0" TextWrapping="Wrap" Text="Click Me!" VerticalAlignment="Top" Width="85.2" FontSize="16" FontWeight="Bold"/>
+            <Image x:Name="message_Copy" HorizontalAlignment="Left" Height="99.6" Margin="73.109,241.147,0,0" VerticalAlignment="Top" Width="148.5" Source="message2.png"/>
+            <TextBlock x:Name="messageText_Copy" HorizontalAlignment="Left" Height="43.2" Margin="74.909,266.547,0,0" TextWrapping="Wrap" Text=" Reminders" VerticalAlignment="Top" Width="85.2" FontSize="16" FontWeight="Bold"/>
+            <Image x:Name="message_Copy1" HorizontalAlignment="Left" Height="99.6" Margin="224.609,572.78,0,0" VerticalAlignment="Top" Width="148.5" Source="message2.png"/>
+            <TextBlock x:Name="messageText_Copy1" HorizontalAlignment="Left" Height="43.2" Margin="242.609,604.847,0,0" TextWrapping="Wrap" Text=" Report" VerticalAlignment="Top" Width="85.2" FontSize="16" FontWeight="Bold"/>
+            <Image x:Name="message_Copy2" HorizontalAlignment="Left" Height="99.6" Margin="480,572.78,-28.5,0" VerticalAlignment="Top" Width="148.5" Source="message2.png"/>
+            <TextBlock x:Name="messageText_Copy2" HorizontalAlignment="Left" Height="43.2" Margin="480,595.047,0,0" TextWrapping="Wrap" Text="Memories" VerticalAlignment="Top" Width="85.2" FontSize="16" FontWeight="Bold"/>
         </Grid>
         <Grid x:Name="DietPlan" HorizontalAlignment="Left" Height="800" Margin="-0.609,1.453,0,-1.453" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
             <Grid x:Name="Diet" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
