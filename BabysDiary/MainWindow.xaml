@@ -97,7 +97,7 @@
                 <Rectangle Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="297" Margin="117.218,271.094,0,0" Stroke="Black" VerticalAlignment="Top" Width="373.5"/>
             </Grid>
         </Grid>
-        <Grid x:Name="Home" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+        <Grid x:Name="Home" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
@@ -196,8 +196,8 @@
                 <Image HorizontalAlignment="Left" Height="42.4" Margin="526.209,8.547,0,0" VerticalAlignment="Top" Width="46.4" Source="exit.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_27"/>
             </Grid>
         </Grid>
-        <Grid x:Name="SleepCycle" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-            <Grid x:Name="Today" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True">
+        <Grid x:Name="SleepCycle" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+            <Grid x:Name="Today" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
                 <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2" d:IsLocked="True"/>
                 <Label Content="Today" HorizontalAlignment="Center" Height="61.5" Margin="242.359,100.094,275.141,0" VerticalAlignment="Top" Width="82.5" FontSize="24" RenderTransformOrigin="0.32,0.415" d:IsLocked="True"/>
                 <Image HorizontalAlignment="Left" Height="54" Margin="481.718,676.094,0,0" VerticalAlignment="Top" Width="61.5" Source="rightArrow.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_6" d:IsLocked="True"/>
@@ -223,7 +223,7 @@
                 <Label Content="1 h" HorizontalAlignment="Left" Height="26" Margin="48.718,277.094,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="33.5" FontSize="16"/>
                 <Label Content="1/2 h" HorizontalAlignment="Left" Height="26" Margin="48.718,404.144,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="33.5" RenderTransformOrigin="0.745,1.269"/>
             </Grid>
-            <Grid x:Name="Week" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True">
+            <Grid x:Name="Week" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
                 <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2" d:IsLocked="True"/>
                 <Label Content="This week" HorizontalAlignment="Center" Height="72" Margin="234.859,92.594,228.641,0" VerticalAlignment="Top" Width="136.5" FontSize="24" RenderTransformOrigin="0.32,0.415" d:IsLocked="True"/>
                 <Image HorizontalAlignment="Left" Height="61.5" Margin="39.218,56.594,0,0" VerticalAlignment="Top" Width="64.5" Source="back.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_4" d:IsLocked="True"/>
@@ -242,6 +242,17 @@
                 <Path Data="M136.718,358.82527 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="219.061" Margin="147.439,327.533,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
                 <Path Data="M136.718,358.82527 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="209.061" Margin="491.218,337.533,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
                 <Path Data="M105.609,302.547 C114.27567,302.547 122.94233,302.547 131.609,302.547 141.27253,302.547 150.48279,310.56907 159.609,315.547 175.51832,324.22481 183.55849,340.30659 197.609,351.547 219.60098,369.14059 217.07353,357.08247 241.609,332.547 264.60815,309.54785 253.66947,313.547 295.609,313.547 319.25839,313.547 336.71908,315.1525 357.609,326.547 364.56582,330.34163 371.75061,334.54627 378.609,338.547 386.79781,343.3238 393.74433,343.547&#xD;&#xA;404.609,343.547 425.49011,343.547 430.12512,321.94055 448.609,314.547 465.82724,307.6597 481.51576,306.20879 498.609,301.547" HorizontalAlignment="Left" Height="63.348" Margin="103.609,299.547,0,0" StrokeStartLineCap="Round" Stretch="Fill" StrokeEndLineCap="Round" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="398" StrokeDashArray="2 1"/>
+                <Path Data="M411.609,179.547 L454.609,179.547" HorizontalAlignment="Left" Height="5" Margin="409.609,177.547,0,0" StrokeStartLineCap="Round" Stretch="Fill" StrokeEndLineCap="Round" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="48" StrokeDashArray="{x:Null}"/>
+                <Path Data="M411.609,179.547 L454.609,179.547" HorizontalAlignment="Left" Height="5" Margin="409.609,211.547,0,0" StrokeStartLineCap="Round" Stretch="Fill" StrokeEndLineCap="Round" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="48" StrokeDashArray="2 1"/>
+                <Label Content="This week" HorizontalAlignment="Left" Height="35" Margin="471.609,165.28,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="72" FontSize="16"/>
+                <Label Content="Last week" HorizontalAlignment="Left" Height="35" Margin="471.609,199.28,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="72" FontSize="16"/>
+                <Label Content="Mon&#xA;" HorizontalAlignment="Left" Height="35" Margin="110.109,548.926,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="16"/>
+                <Label Content="Tue&#xA;" HorizontalAlignment="Left" Height="35" Margin="165.47,548.926,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="16"/>
+                <Label Content="Wed&#xA;" HorizontalAlignment="Left" Height="35" Margin="217.496,548.926,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="16"/>
+                <Label Content="Thu&#xA;" HorizontalAlignment="Left" Height="35" Margin="284.196,548.926,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="16"/>
+                <Label Content="Fri&#xA;" HorizontalAlignment="Left" Height="35" Margin="352.23,548.926,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="16"/>
+                <Label Content="Sat&#xA;" HorizontalAlignment="Left" Height="35" Margin="408.925,548.926,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="16"/>
+                <Label Content="Sun&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Height="35" Margin="460.951,548.926,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="16"/>
             </Grid>
         </Grid>
         <Grid x:Name="Reminder" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
@@ -257,7 +268,7 @@
             <Label Content="9:30 AM" HorizontalAlignment="Left" Height="29.5" Margin="70.109,289.047,0,0" VerticalAlignment="Top" Width="87.609" FontSize="18"/>
             <Label Content="10 PM" HorizontalAlignment="Left" Height="29.5" Margin="70.109,435.547,0,0" VerticalAlignment="Top" Width="66.609" FontSize="18"/>
         </Grid>
-        <Grid x:Name="Record" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
+        <Grid x:Name="Record" HorizontalAlignment="Left" Height="800" Margin="1.392,-0.547,-1.392,0" VerticalAlignment="Top" Width="600">
 
             <Grid x:Name="HeightAndWeight" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
                 <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
@@ -305,7 +316,7 @@
                 <Label Content="Week 3 &#xA;" HorizontalAlignment="Left" Height="35" Margin="326.109,556.547,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="18"/>
                 <Label Content="Week 4&#xA;" HorizontalAlignment="Left" Height="35" Margin="409.609,556.547,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="18"/>
             </Grid>
-            <Grid x:Name="Sleeping" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
+            <Grid x:Name="Sleeping" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
                 <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
                 <Image HorizontalAlignment="Left" Height="56.4" Margin="38.318,22.694,0,0" VerticalAlignment="Top" Width="62.118" Source="back.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_9" d:IsLocked="True"/>
                 <TextBlock HorizontalAlignment="Left" Height="60" Margin="160.718,86.294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" FontSize="24" Text="Sleeping hours"/>
