@@ -23,17 +23,19 @@ namespace BabysDiary
         public MainWindow()
         {
             InitializeComponent();
-            setAllInvisible();
+            SetAllInvisible();
             Login.Visibility = Visibility.Visible;
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
-            setAllInvisible();
-            Home.Visibility = Visibility.Visible;
+            SetAllInvisible();
+            SetUp.Visibility = Visibility.Visible;
+            SetSetUpInvisible();
+            SetUp1.Visibility = Visibility.Visible;
         }
 
-        private void setAllInvisible()
+        private void SetAllInvisible()
         {
             Login.Visibility = Visibility.Hidden;
             Register.Visibility = Visibility.Hidden;
@@ -53,12 +55,181 @@ namespace BabysDiary
             RealTimeDiet.Visibility = Visibility.Hidden;
         }
 
+        private void SetSetUpInvisible()
+        {
+            SetUp1.Visibility = Visibility.Hidden;
+            SetUp2.Visibility = Visibility.Hidden;
+            SetUp3.Visibility = Visibility.Hidden;
+            SetUp4.Visibility = Visibility.Hidden;
+            SetUp5.Visibility = Visibility.Hidden;
+            SetUp6.Visibility = Visibility.Hidden;
+        }
+
+        private void SetDietPlanInvisible()
+        {
+            Diet.Visibility = Visibility.Hidden;
+            Analysis.Visibility = Visibility.Hidden;
+            Change.Visibility = Visibility.Hidden;
+        }
+
+        private void SetSleepCycleInvisible()
+        {
+            Today.Visibility = Visibility.Hidden;
+            Week.Visibility = Visibility.Hidden;
+        }
+
 
         private void aImage_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            setAllInvisible();
+            SetAllInvisible();
             Login.Visibility = Visibility.Visible;
 
+        }
+
+        private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            SetUp.Visibility = Visibility.Visible;
+            SetSetUpInvisible();
+            SetUp2.Visibility = Visibility.Visible;
+        }
+
+        private void left_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            SetUp.Visibility = Visibility.Visible;
+            SetSetUpInvisible();
+            SetUp1.Visibility = Visibility.Visible;
+        }
+
+        private void right_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            SetUp.Visibility = Visibility.Visible;
+            SetSetUpInvisible();
+            SetUp3.Visibility = Visibility.Visible;
+        }
+
+        private void left_Copy_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            SetUp.Visibility = Visibility.Visible;
+            SetSetUpInvisible();
+            SetUp2.Visibility = Visibility.Visible;
+        }
+
+        private void right_Copy_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            SetUp.Visibility = Visibility.Visible;
+            SetSetUpInvisible();
+            SetUp4.Visibility = Visibility.Visible;
+        }
+
+        private void left_Copy1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            SetUp.Visibility = Visibility.Visible;
+            SetSetUpInvisible();
+            SetUp3.Visibility = Visibility.Visible;
+        }
+
+        private void right_Copy1_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            SetUp.Visibility = Visibility.Visible;
+            SetSetUpInvisible();
+            SetUp5.Visibility = Visibility.Visible;
+        }
+
+        private void left_Copy2_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            SetUp.Visibility = Visibility.Visible;
+            SetSetUpInvisible();
+            SetUp4.Visibility = Visibility.Visible;
+        }
+
+        private void right_Copy2_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            SetUp.Visibility = Visibility.Visible;
+            SetSetUpInvisible();
+            SetUp6.Visibility = Visibility.Visible;
+        }
+
+        private void left_Copy3_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            SetUp.Visibility = Visibility.Visible;
+            SetSetUpInvisible();
+            SetUp5.Visibility = Visibility.Visible;
+        }
+
+        private void right_Copy3_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            Home.Visibility = Visibility.Visible;
+        }
+
+        private void Image_MouseLeftButtonDown_2(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            Home.Visibility = Visibility.Visible;
+        }
+
+        private void Image_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            DietPlan.Visibility = Visibility.Visible;
+            SetDietPlanInvisible();
+            Diet.Visibility = Visibility.Visible;
+        }
+
+        private void Image_MouseLeftButtonDown_3(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            DietPlan.Visibility = Visibility.Visible;
+            SetDietPlanInvisible();
+            Diet.Visibility = Visibility.Visible;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            SetAllInvisible();
+            DietPlan.Visibility = Visibility.Visible;
+            SetDietPlanInvisible();
+            Analysis.Visibility = Visibility.Visible;
+        }
+
+        private void Image_MouseLeftButtonDown_4(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            SleepCycle.Visibility = Visibility.Visible;
+            SetSleepCycleInvisible();
+            Today.Visibility = Visibility.Visible;
+        }
+
+        private void Image_MouseLeftButtonDown_5(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            SleepCycle.Visibility = Visibility.Visible;
+            SetSleepCycleInvisible();
+            Today.Visibility = Visibility.Visible;
+        }
+
+        private void Image_MouseLeftButtonDown_6(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            SleepCycle.Visibility = Visibility.Visible;
+            SetSleepCycleInvisible();
+            Week.Visibility = Visibility.Visible;
+        }
+
+        private void Image_MouseLeftButtonDown_7(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            Reminder.Visibility = Visibility.Visible;
         }
     }
 }
