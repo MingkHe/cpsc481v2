@@ -128,5 +128,50 @@
   <ItemGroup>
     <Resource Include="babyCrawling.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="babyicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="milkbottle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="vegetable.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="carrot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="meat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="eyes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="crawl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="stand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="walk.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
