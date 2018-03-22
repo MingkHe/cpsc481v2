@@ -6,230 +6,444 @@
         xmlns:local="clr-namespace:BabysDiary"
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="600">
-  <Grid x:Name="MainGrid" Width="600" Height="800" Background="#FFFBFDFD">
-    <Grid x:Name="Login" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-      <TextBlock x:Name="title" HorizontalAlignment="Center" Height="182.461" Margin="88.373,70.543,72.771,0" TextWrapping="Wrap" Text="Baby's Diary" VerticalAlignment="Top" Width="438.856" FontWeight="Bold" FontSize="72"/>
-      <Image x:Name="titlePicture" HorizontalAlignment="Left" Height="227.179" Margin="162.113,168.112,0,0" VerticalAlignment="Top" Width="225.194" Source="babyTitle.png">
-
-      </Image>
-      <TextBox x:Name="UserName" HorizontalAlignment="Left" Height="31.88" Margin="162.113,425.291,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top" Width="225.194"/>
-      <TextBox x:Name="Password" HorizontalAlignment="Left" Height="33.915" Margin="162.113,491.764,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Width="225.194"/>
-      <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Height="23.741" Margin="194.671,566.376,0,0" VerticalAlignment="Top" Width="164.147" Click="LoginButton_Click"/>
-      <Button x:Name="RegisterButton" Content="Register" HorizontalAlignment="Left" Height="23.062" Margin="194.671,611.144,0,0" VerticalAlignment="Top" Width="164.147"/>
-    </Grid>
-    <Grid x:Name="Register" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-      <TextBlock HorizontalAlignment="Left" Height="172.212" Margin="108.29,74.047,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285.76"><Run Text="another"/><LineBreak/><Run/></TextBlock>
-      <TextBlock HorizontalAlignment="Left" Height="40.5" Margin="46.109,33.547,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76.5"><Run Text="TextBlock">
+    <Grid x:Name="MainGrid" Width="600" Height="800" Background="#FFFBFDFD">
+        <Grid x:Name="Login" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+            <TextBlock x:Name="title" HorizontalAlignment="Center" Height="182.461" Margin="77.873,70.543,58.071,0" TextWrapping="Wrap" Text="Baby's Diary" VerticalAlignment="Top" Width="464.056" FontWeight="Bold" FontSize="72"/>
+            <TextBox x:Name="UserName" HorizontalAlignment="Left" Height="31.88" Margin="162.113,425.291,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top" Width="225.194"/>
+            <TextBox x:Name="Password" HorizontalAlignment="Left" Height="33.915" Margin="162.113,491.764,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Width="225.194"/>
+            <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Height="23.741" Margin="194.671,566.376,0,0" VerticalAlignment="Top" Width="164.147" Click="LoginButton_Click"/>
+            <Button x:Name="RegisterButton" Content="Register" HorizontalAlignment="Left" Height="23.062" Margin="194.671,611.144,0,0" VerticalAlignment="Top" Width="164.147"/>
+            <Image HorizontalAlignment="Left" Height="196.8" Margin="176.671,170.404,0,0" VerticalAlignment="Top" Width="230.598" Source="babyTitle1.png"/>
+        </Grid>
+        <Grid x:Name="Register" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+            <TextBlock HorizontalAlignment="Left" Height="172.212" Margin="108.29,74.047,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285.76"><Run Text="another"/><LineBreak/><Run/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Height="40.5" Margin="46.109,33.547,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76.5"><Run Text="TextBlock">
                     <Run.Background>
                         <ImageBrush/>
                     </Run.Background>
                 </Run></TextBlock>
-    </Grid>
-    <Grid x:Name="SetUp" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-      <Grid x:Name="SetUp1" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
-        <Image HorizontalAlignment="Left" Height="63" Margin="505.718,673.094,0,0" VerticalAlignment="Top" Width="60" Source="rightArrow.png" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
-        <TextBlock HorizontalAlignment="Left" Height="280.5" Margin="85.718,137.594,0,0" TextWrapping="Wrap" Text="5 steps to set up your baby's profile" VerticalAlignment="Top" Width="385.5" FontSize="24"/>
-      </Grid>
-      <Grid x:Name="SetUp2" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
-        <TextBlock HorizontalAlignment="Left" Height="67.5" Margin="184.109,122.047,0,0" TextWrapping="Wrap" Text="Step 1/5" VerticalAlignment="Top" Width="199.5" FontSize="24"/>
-        <Image x:Name="left" HorizontalAlignment="Left" Height="57" Margin="42.218,662.594,0,0" VerticalAlignment="Top" Width="60" Source="left.png" MouseLeftButtonDown="left_MouseLeftButtonDown"/>
-        <Image x:Name="right" HorizontalAlignment="Left" Height="61.5" Margin="502.109,662.047,0,0" VerticalAlignment="Top" Width="58.5" Source="rightArrow.png" MouseLeftButtonDown="right_MouseLeftButtonDown"/>
-        <TextBlock HorizontalAlignment="Left" Height="40.5" Margin="266.609,344.047,0,0" TextWrapping="Wrap" Text="or" VerticalAlignment="Top" Width="46.5" FontSize="24"/>
-        <Image HorizontalAlignment="Left" Height="97.5" Margin="124.718,317.047,0,0" VerticalAlignment="Top" Width="118.5" Source="boy5.png"/>
-        <Image HorizontalAlignment="Left" Height="99" Margin="342.218,317.047,0,0" VerticalAlignment="Top" Width="118.5" Source="girl2.png"/>
-      </Grid>
-      <Grid x:Name="SetUp3" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
-        <TextBlock HorizontalAlignment="Left" Height="84" Margin="217.109,162.547,0,0" TextWrapping="Wrap" Text="Step 2/5" VerticalAlignment="Top" Width="190.5" FontSize="24"/>
-        <TextBlock HorizontalAlignment="Left" Height="93" Margin="164.609,267.547,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175.5" FontSize="24"><Run Text="Your baby's"/><LineBreak/><Run Text="name is :"/><LineBreak/><Run/></TextBlock>
-        <TextBox HorizontalAlignment="Left" Height="39" Margin="274.109,297.547,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115.5" FontSize="24"/>
-        <Image x:Name="left_Copy" HorizontalAlignment="Left" Height="57" Margin="42.218,662.594,0,0" VerticalAlignment="Top" Width="60" Source="left.png" MouseLeftButtonDown="left_Copy_MouseLeftButtonDown"/>
-        <Image x:Name="right_Copy" HorizontalAlignment="Left" Height="61.5" Margin="502.109,662.047,0,0" VerticalAlignment="Top" Width="58.5" Source="rightArrow.png" MouseLeftButtonDown="right_Copy_MouseLeftButtonDown"/>
-      </Grid>
-      <Grid x:Name="SetUp4" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
-        <Image x:Name="left_Copy1" HorizontalAlignment="Left" Height="57" Margin="42.218,662.594,0,0" VerticalAlignment="Top" Width="60" Source="left.png" MouseLeftButtonDown="left_Copy1_MouseLeftButtonDown"/>
-        <Image x:Name="right_Copy1" HorizontalAlignment="Left" Height="61.5" Margin="502.109,662.047,0,0" VerticalAlignment="Top" Width="58.5" Source="rightArrow.png" MouseLeftButtonDown="right_Copy1_MouseLeftButtonDown"/>
-        <TextBlock HorizontalAlignment="Left" Height="69" Margin="229.718,154.094,0,0" TextWrapping="Wrap" Text="Step 3/5" VerticalAlignment="Top" Width="148.5" FontSize="24"/>
-        <TextBlock HorizontalAlignment="Left" Height="49.5" Margin="96.218,242.594,0,0" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" Width="111" FontSize="24"/>
-        <TextBlock HorizontalAlignment="Left" Height="40.5" Margin="96.218,337.094,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94.5" FontSize="24" Text="Height:"/>
-        <TextBox HorizontalAlignment="Left" Height="49.5" Margin="207.218,242.594,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" FontSize="24"/>
-        <TextBox HorizontalAlignment="Left" Height="49.5" Margin="207.218,328.094,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" FontSize="24"/>
-        <TextBlock HorizontalAlignment="Left" Height="49.5" Margin="414.218,242.594,0,0" TextWrapping="Wrap" Text="kg" VerticalAlignment="Top" Width="63" FontSize="24"/>
-        <TextBlock HorizontalAlignment="Left" Height="49.5" Margin="414.218,328.094,0,0" TextWrapping="Wrap" Text="cm" VerticalAlignment="Top" Width="63" FontSize="24"/>
-      </Grid>
-      <Grid x:Name="SetUp5" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
-        <Image x:Name="left_Copy2" HorizontalAlignment="Left" Height="57" Margin="42.218,662.594,0,0" VerticalAlignment="Top" Width="60" Source="left.png" MouseLeftButtonDown="left_Copy2_MouseLeftButtonDown"/>
-        <Image x:Name="right_Copy2" HorizontalAlignment="Left" Height="61.5" Margin="502.109,662.047,0,0" VerticalAlignment="Top" Width="58.5" Source="rightArrow.png" MouseLeftButtonDown="right_Copy2_MouseLeftButtonDown"/>
-        <TextBlock HorizontalAlignment="Left" Height="69" Margin="229.718,154.094,0,0" TextWrapping="Wrap" Text="Step 4/5" VerticalAlignment="Top" Width="148.5" FontSize="24"/>
-        <TextBlock HorizontalAlignment="Left" Height="109.5" Margin="189.218,265.094,0,0" TextWrapping="Wrap" Text="Customize a cartoon character for you baby:" VerticalAlignment="Top" Width="211.5" FontSize="24"/>
-        <Image HorizontalAlignment="Left" Height="70.5" Margin="84.218,463.094,0,0" VerticalAlignment="Top" Width="79.5" Source="custom1.png"/>
-        <Image HorizontalAlignment="Left" Height="70.5" Margin="412.718,463.094,0,0" VerticalAlignment="Top" Width="90" Source="cus3.png"/>
-        <Image HorizontalAlignment="Left" Height="66" Margin="243.218,463.094,0,0" VerticalAlignment="Top" Width="87" Source="cus2.png"/>
-      </Grid>
-      <Grid x:Name="SetUp6" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
-        <Image x:Name="left_Copy3" HorizontalAlignment="Left" Height="57" Margin="42.218,662.594,0,0" VerticalAlignment="Top" Width="60" Source="left.png" MouseLeftButtonDown="left_Copy3_MouseLeftButtonDown"/>
-        <Image x:Name="right_Copy3" HorizontalAlignment="Left" Height="61.5" Margin="502.109,662.047,0,0" VerticalAlignment="Top" Width="58.5" Source="rightArrow.png" MouseLeftButtonDown="right_Copy3_MouseLeftButtonDown"/>
-        <TextBlock HorizontalAlignment="Left" Height="69" Margin="229.718,154.094,0,0" TextWrapping="Wrap" Text="Step 5/5" VerticalAlignment="Top" Width="148.5" FontSize="24"/>
-        <TextBlock HorizontalAlignment="Left" Height="112.5" Margin="172.718,197.194,0,0" TextWrapping="Wrap" Text="Take a photo for your baby:" VerticalAlignment="Top" Width="246" FontSize="24"/>
-        <Image HorizontalAlignment="Left" Height="90" Margin="244.718,568.094,0,0" VerticalAlignment="Top" Width="85.5" Source="camera2.png"/>
-        <Rectangle Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="297" Margin="117.218,271.094,0,0" Stroke="Black" VerticalAlignment="Top" Width="373.5"/>
-      </Grid>
-    </Grid>
-    <Grid x:Name="Home" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
-      <Image HorizontalAlignment="Left" Height="55.5" Margin="37.109,80.047,0,0" VerticalAlignment="Top" Width="58.5" Source="milk.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_3"/>
-      <Image HorizontalAlignment="Left" Height="66" Margin="37.109,195.547,0,0" VerticalAlignment="Top" Width="58.5" Source="sleep.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_5"/>
-      <Image HorizontalAlignment="Left" Height="52.5" Margin="37.109,318.547,0,0" VerticalAlignment="Top" Width="58.5" Source="reminder.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_7"/>
-      <Image HorizontalAlignment="Left" Height="79.5" Margin="73.109,632.047,0,0" VerticalAlignment="Top" Width="87" Source="camera2.png"/>
-      <Image HorizontalAlignment="Left" Height="58.5" Margin="196.109,653.047,0,0" VerticalAlignment="Top" Width="60" Source="record.png" RenderTransformOrigin="0.55,0.308"/>
-      <Image HorizontalAlignment="Left" Height="58.5" Margin="313.109,653.047,0,0" VerticalAlignment="Top" Width="60" Source="profile.png"/>
-      <Image HorizontalAlignment="Left" Height="58.5" Margin="446.609,653.047,0,0" VerticalAlignment="Top" Width="66" Source="memory.png"/>
-      <Image HorizontalAlignment="Left" Height="96" Margin="479.609,494.047,0,0" VerticalAlignment="Top" Width="84" Source="setting.png"/>
-      <Image HorizontalAlignment="Left" Height="142.5" Margin="432.5,38.047,0,0" VerticalAlignment="Top" Width="157.5" Source="sun.png"/>
-      <Image HorizontalAlignment="Left" Height="241.5" Margin="181.109,257.047,0,0" VerticalAlignment="Top" Width="243" Source="babycrawing.jfif"/>
-    </Grid>
-    <Grid x:Name="DietPlan" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-      <Grid x:Name="Diet" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
-        <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
-        <Button Content="Analysis" HorizontalAlignment="Left" Height="54" Margin="327.218,676.094,0,0" VerticalAlignment="Top" Width="186" FontSize="24" Click="Button_Click"/>
-        <Path Data="M85.718,139.094 L84.218,629.594" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="491.5" Margin="84.218,139.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="2.5"/>
-        <Path Data="M86.718,139.094 L160.718,139.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="1" Margin="86.718,139.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="75"/>
-        <Path Data="M84.218,630.594 L513.218,630.594" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="1" Margin="84.218,630.594,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="430"/>
-        <Path Data="M513.218,630.594 L513.218,166.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="465.5" Margin="513.218,166.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
-        <Path Data="M161.718,139.094 L161.718,169.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="31" Margin="161.718,139.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
-        <Path Data="M161.718,166.094 L508.218,166.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="1" Margin="161.718,166.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="347.5"/>
-        <Path Data="M162.718,139.094 L228.218,139.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="1" Margin="162.718,139.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="66.5"/>
-        <Path Data="M229.218,139.094 L229.218,166.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="28" Margin="229.218,139.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
-        <Path Data="M230.218,139.094 L285.218,139.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="1" Margin="230.218,139.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="56"/>
-        <Path Data="M286.218,139.094 L286.218,170.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="32" Margin="286.218,139.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
-        <Label Content="Plan 1" HorizontalAlignment="Left" Height="30" Margin="91.718,140.094,0,0" VerticalAlignment="Top" Width="70" FontSize="14"/>
-        <Label Content="Plan 2" HorizontalAlignment="Left" Height="30" Margin="162.718,140.094,0,0" VerticalAlignment="Top" Width="70" FontSize="14"/>
-        <Label Content="Plan 3" HorizontalAlignment="Left" Height="30" Margin="232.718,140.094,0,0" VerticalAlignment="Top" Width="70" FontSize="14"/>
-        <Label Content="Breakfast:" HorizontalAlignment="Left" Height="28.5" Margin="91.718,188.594,0,0" VerticalAlignment="Top" Width="85" FontSize="16"/>
-        <Label Content="Lunch:" HorizontalAlignment="Left" Height="28.5" Margin="91.718,331.094,0,0" VerticalAlignment="Top" Width="85" FontSize="16"/>
-        <Label Content="Dinner:" HorizontalAlignment="Left" Height="28.5" Margin="91.718,475.094,0,0" VerticalAlignment="Top" Width="85" FontSize="16"/>
-        <Image HorizontalAlignment="Left" Height="72" Margin="121.718,239.594,0,0" VerticalAlignment="Top" Width="93" Source="dietMilk.png"/>
-        <Image HorizontalAlignment="Left" Height="72" Margin="232.718,239.594,0,0" VerticalAlignment="Top" Width="70" Source="bread.png"/>
-        <Image HorizontalAlignment="Left" Height="58.5" Margin="348.218,239.594,0,0" VerticalAlignment="Top" Width="61.5" Source="add.png" RenderTransformOrigin="0.415,0.462"/>
-        <Image HorizontalAlignment="Left" Height="72" Margin="121.718,379.094,0,0" VerticalAlignment="Top" Width="93" Source="dietMilk.png"/>
-        <Image HorizontalAlignment="Left" Height="72" Margin="121.718,529.094,0,0" VerticalAlignment="Top" Width="93" Source="dietMilk.png"/>
-        <Image HorizontalAlignment="Left" Height="58.5" Margin="348.218,379.094,0,0" VerticalAlignment="Top" Width="61.5" Source="add.png" RenderTransformOrigin="0.415,0.462"/>
-        <Image HorizontalAlignment="Left" Height="58.5" Margin="348.218,529.094,0,0" VerticalAlignment="Top" Width="61.5" Source="add.png" RenderTransformOrigin="0.415,0.462"/>
-        <Image HorizontalAlignment="Left" Height="72" Margin="232.718,379.094,0,0" VerticalAlignment="Top" Width="70" Source="vege.png"/>
-        <Image HorizontalAlignment="Left" Height="72" Margin="232.718,529.094,0,0" VerticalAlignment="Top" Width="70" Source="eggplant.png"/>
-        <Label Content="80ml" HorizontalAlignment="Left" Height="28.5" Margin="135.718,308.827,0,0" VerticalAlignment="Top" Width="54.5" FontSize="16"/>
-        <Label Content="80ml" HorizontalAlignment="Left" Height="28.5" Margin="135.718,451.094,0,0" VerticalAlignment="Top" Width="54.5" FontSize="16"/>
-        <Label Content="80ml" HorizontalAlignment="Left" Height="28.5" Margin="135.718,597.094,0,0" VerticalAlignment="Top" Width="54.5" FontSize="16"/>
-        <Label HorizontalAlignment="Left" Height="48" Margin="248.218,311.594,0,0" VerticalAlignment="Top" Width="54.5" FontSize="16" Content="200g"/>
-        <Label Content="300g" HorizontalAlignment="Left" Height="48" Margin="248.218,457.327,0,0" VerticalAlignment="Top" Width="54.5" FontSize="16"/>
-        <Label Content="100g" HorizontalAlignment="Left" Height="48" Margin="248.218,597.094,0,0" VerticalAlignment="Top" Width="54.5" FontSize="16"/>
-      </Grid>
-      <Grid x:Name="Analysis" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
-        <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
-        <Image HorizontalAlignment="Left" Height="51" Margin="45.218,40.094,0,0" VerticalAlignment="Top" Width="76.5" Source="back.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_1"/>
-        <Image HorizontalAlignment="Left" Height="384" Margin="58.718,109.094,0,0" VerticalAlignment="Top" Width="450" Source="eatwell_plate2.jpg"/>
-        <TextBlock HorizontalAlignment="Left" Height="133" Margin="58.718,498.094,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" FontSize="24"><Run Text="Comment:"/><LineBreak/><Run Text="Your baby's diet plan is scientific :D"/></TextBlock>
-      </Grid>
-      <Grid x:Name="Change" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True"/>
-    </Grid>
-    <Grid x:Name="SleepCycle" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-      <Grid x:Name="Today" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
-        <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
-        <Label Content="Today" HorizontalAlignment="Center" Height="61.5" Margin="242.359,100.094,275.141,0" VerticalAlignment="Top" Width="82.5" FontSize="24" RenderTransformOrigin="0.32,0.415"/>
-        <Image HorizontalAlignment="Left" Height="54" Margin="481.718,676.094,0,0" VerticalAlignment="Top" Width="61.5" Source="rightArrow.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_6"/>
-      </Grid>
-      <Grid x:Name="Week" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
-        <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
-        <Label Content="This week" HorizontalAlignment="Center" Height="72" Margin="234.859,92.594,228.641,0" VerticalAlignment="Top" Width="136.5" FontSize="24" RenderTransformOrigin="0.32,0.415"/>
-        <Image HorizontalAlignment="Left" Height="61.5" Margin="39.218,56.594,0,0" VerticalAlignment="Top" Width="64.5" Source="back.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_4"/>
-      </Grid>
-    </Grid>
-    <Grid x:Name="Reminder" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
-      <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
-      <Image HorizontalAlignment="Left" Height="79.5" Margin="58.718,66.547,0,0" VerticalAlignment="Top" Width="99" Source="reminder2.png"/>
-      <Image HorizontalAlignment="Left" Height="79.5" Margin="58.718,204.547,0,0" VerticalAlignment="Top" Width="99" Source="reminder2.png"/>
-      <Image HorizontalAlignment="Left" Height="79.5" Margin="58.718,356.047,0,0" VerticalAlignment="Top" Width="99" Source="reminder2.png"/>
-      <Image HorizontalAlignment="Left" Height="79.5" Margin="58.718,497.047,0,0" VerticalAlignment="Top" Width="99" Source="add.png"/>
-      <TextBlock HorizontalAlignment="Left" Height="58.5" Margin="179.609,87.547,0,0" TextWrapping="Wrap" Text="Tooth brushing" VerticalAlignment="Top" Width="279" FontSize="24" TextDecorations="{x:Null}"/>
-      <TextBlock HorizontalAlignment="Left" Height="58.5" Margin="179.609,225.547,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" FontSize="24" TextDecorations="{x:Null}" Text="Prepare breakfast"/>
-      <TextBlock HorizontalAlignment="Left" Height="58.5" Margin="179.609,377.047,0,0" TextWrapping="Wrap" Text="bed-time" VerticalAlignment="Top" Width="279" FontSize="24" TextDecorations="{x:Null}"/>
-      <Label Content="9 AM" HorizontalAlignment="Left" Height="29.5" Margin="70.109,149.047,0,0" VerticalAlignment="Top" Width="66.609" FontSize="18"/>
-      <Label Content="9:30 AM" HorizontalAlignment="Left" Height="29.5" Margin="70.109,289.047,0,0" VerticalAlignment="Top" Width="87.609" FontSize="18"/>
-      <Label Content="10 PM" HorizontalAlignment="Left" Height="29.5" Margin="70.109,435.547,0,0" VerticalAlignment="Top" Width="66.609" FontSize="18"/>
-    </Grid>
-    <Grid x:Name="Record" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-      <Grid x:Name="HeightAndWeight" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-      <Grid x:Name="Nutrition" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-      <Grid x:Name="Sleeping" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-    </Grid>
-    <Grid x:Name="Report" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-      <Grid x:Name="ReportH" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-      <Grid x:Name="ReportW" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-      <Grid x:Name="ReportResult" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-      <Grid x:Name="ReportEval" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-    </Grid>
-    <Grid x:Name="Camera" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-      <Grid x:Name="TakePhoto" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-        <Image x:Name="CameraIcon_Copy" HorizontalAlignment="Left" Height="55.689" Margin="10,708.226,0,0" VerticalAlignment="Top" Width="85.758" Source="home.png"/>
-        <Image x:Name="DashedLine" HorizontalAlignment="Left" Height="748.131" VerticalAlignment="Top" Width="560.244" Margin="10,51.869,0,0" Source="verticalDashedLine2.png"/>
-        <Image x:Name="CameraIcon" HorizontalAlignment="Left" Height="89.346" Margin="255.136,659.514,0,0" VerticalAlignment="Top" Width="132.237" Source="camera.png"/>
-      </Grid>
-      <Grid x:Name="SavePhoto" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
-        <Image x:Name="CameraIcon_Copy1" HorizontalAlignment="Left" Height="55.689" Margin="10,708.226,0,0" VerticalAlignment="Top" Width="85.758" Source="home.png"/>
-        <Image x:Name="back_Copy" HorizontalAlignment="Left" Height="60.79" Margin="10,10,0,0" VerticalAlignment="Top" Width="86.007" Source="back.jpg" RenderTransformOrigin="0.778,0.512"/>
-        <Button Content="SAVE TO ALBUM&#xD;&#xA;" Margin="155.083,708.226,168.144,43.894" FontSize="36"/>
-        <TextBlock TextWrapping="Wrap" Margin="185.307,47.712,200.315,687.968" Height="64.319" Width="214.377" FontSize="20"><Run FontSize="26" Text="Title"/><Run Text=":   ______________"/></TextBlock>
-        <Image HorizontalAlignment="Left" Height="411.833" VerticalAlignment="Top" Width="325.119" Margin="148.409,158.721,0,0" Source="babyPlaying.jpg"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="205.108,538.618,0,0" Height="65.987" Width="157.681" FontSize="20"><Run FontWeight="Bold" Text="Time"/><Run Text=" :   _______"/><LineBreak/><Run FontWeight="Bold" Text="Date"/><Run Text=" :   _______"/></TextBlock>
-      </Grid>
-    </Grid>
-    <Grid x:Name="Profile" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True"/>
-    <Grid x:Name="Memory" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-      <Grid x:Name="Msit" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-      <Grid x:Name="Mcrawl" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-      <Grid x:Name="Mstand" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-      <Grid x:Name="Mwalk" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600"/>
-    </Grid>
-    <Grid x:Name="Album" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True"/>
-    <Grid x:Name="Setting" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-      <Grid x:Name="Set" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-        <Image x:Name="back_Copy1" HorizontalAlignment="Left" Height="60.79" Margin="10,10,0,0" VerticalAlignment="Top" Width="86.007" Source="back.jpg" RenderTransformOrigin="0.778,0.512"/>
-        <Image x:Name="aImage_Copy" HorizontalAlignment="Left" Height="155.872" Margin="10,678.131,0,-34.003" VerticalAlignment="Top" Width="71.445" MouseLeftButtonDown="aImage_MouseLeftButtonDown" Source="home.png"/>
-        <Button Content="Theme" Margin="185.099,176.277,223.173,575.843" FontSize="36" FontWeight="Bold"/>
-        <Button Content="Support" Margin="185.099,333.027,223.173,412.423" FontSize="36" FontWeight="Bold"/>
-        <Button Content="Theme" Margin="185.099,176.277,223.173,575.843" FontSize="36" FontWeight="Bold"/>
-        <Button Content="About Us" Margin="185.099,503.117,223.173,249.003" FontSize="36" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="185.099,56.05,0,0" Height="79.563" Width="191.728" FontSize="36" Text="Settings:"/>
-      </Grid>
-      <Grid x:Name="Theme" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="29.963" Stroke="Black" VerticalAlignment="Top" Width="36.633" Margin="70.037,253.468,0,0"/>
-        <Image x:Name="back_Copy2" HorizontalAlignment="Left" Height="60.79" Margin="10,10,0,0" VerticalAlignment="Top" Width="86.007" Source="back.jpg" RenderTransformOrigin="0.778,0.512"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="185.099,56.05,0,0" Height="79.563" Width="191.728" FontSize="36"><Run FontWeight="Bold" Text="Theme"/><Run Text=":"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="61.7,181.116,0,0" Height="79.563" Width="191.728" FontSize="36"><Run FontWeight="Bold" Text="Colour"/><Run Text=":"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="61.7,337.866,0,0" Height="79.563" Width="393.502" FontSize="36"><Run FontWeight="Bold" Text="Background"/><Run Text=":"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="61.7,504.621,0,0" Height="79.563" Width="393.502" FontSize="36"><Run FontWeight="Bold" Text="Baby Character"/><Run Text=":"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="208.446,584.184,0,0" Height="79.563" Width="213.406" FontSize="24" TextDecorations="Underline" Text="Customize" FontWeight="Bold"/>
-        <Button Content="Apply" Margin="350.187,672.564,119.784,71.219" FontSize="36"/>
-        <Rectangle Fill="#FFFFF406" HorizontalAlignment="Left" Height="29.963" Stroke="Black" VerticalAlignment="Top" Width="36.633" Margin="151.746,253.468,0,0"/>
-        <Rectangle Fill="#FF7FFD00" HorizontalAlignment="Left" Height="29.963" Stroke="Black" VerticalAlignment="Top" Width="36.633" Margin="236.792,253.468,0,0"/>
-        <Rectangle Fill="#FFFD2A14" HorizontalAlignment="Left" Height="29.963" Stroke="Black" VerticalAlignment="Top" Width="36.633" Margin="328.508,253.468,0,0"/>
-        <Rectangle Fill="Blue" HorizontalAlignment="Left" Height="29.963" Stroke="Black" VerticalAlignment="Top" Width="36.633" Margin="410.217,253.468,0,0"/>
-        <Rectangle Fill="#FFFFA80E" HorizontalAlignment="Left" Height="29.963" Stroke="Black" VerticalAlignment="Top" Width="36.633" Margin="70.037,253.468,0,0"/>
-        <Image x:Name="back_Copy5" HorizontalAlignment="Left" Height="85.803" Margin="61.7,397.418,0,0" VerticalAlignment="Top" Width="112.688" Source="background1.jpg" RenderTransformOrigin="0.778,0.512"/>
-        <Image x:Name="back_Copy6" HorizontalAlignment="Left" Height="85.803" Margin="252.453,397.418,0,0" VerticalAlignment="Top" Width="112.688" Source="background3.jpg" RenderTransformOrigin="0.982,0.547"/>
-        <Image x:Name="back_Copy7" HorizontalAlignment="Left" Height="85.803" Margin="410.217,397.418,0,0" VerticalAlignment="Top" Width="112.688" Source="background2.jpg" RenderTransformOrigin="0.778,0.512"/>
-        <Image x:Name="back_Copy8" HorizontalAlignment="Left" Height="135.83" Margin="61.7,584.184,0,0" VerticalAlignment="Top" Width="183.44" Source="babyCrawling.png" RenderTransformOrigin="0.778,0.512"/>
-      </Grid>
-      <Grid x:Name="About" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
-        <Image x:Name="back_Copy3" HorizontalAlignment="Left" Height="60.79" Margin="10,10,0,0" VerticalAlignment="Top" Width="86.007" Source="back.jpg" RenderTransformOrigin="0.778,0.512"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="213.447,56.05,0,0" Height="79.563" Width="191.728" FontSize="36"><Run FontWeight="Bold" Text="About Us"/><Run Text=":"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="41.69,173.964,0,0" Height="72.893" Width="380.162" FontSize="36"><Run FontWeight="Bold" Text="Development Team"/><Run Text=":"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="41.69,632.541,0,0" Height="72.893" Width="518.569" FontSize="36"><Run FontWeight="Bold" Text="Contact Us"/><Run Text=": email@live.ca"/></TextBlock>
-      </Grid>
-      <Grid x:Name="Supp" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-        <Image x:Name="back_Copy4" HorizontalAlignment="Left" Height="60.79" Margin="10,10,0,0" VerticalAlignment="Top" Width="86.007" Source="back.jpg" RenderTransformOrigin="0.778,0.512"/>
-      </Grid>
-    </Grid>
-    <Grid x:Name="Loading" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True"/>
-    <Grid x:Name="RealTimeDiet" HorizontalAlignment="Left" Height="800" Margin="-0.609,-10,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True"/>
+        </Grid>
+        <Grid x:Name="SetUp" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
+            <Grid x:Name="SetUp1" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+                <Image HorizontalAlignment="Left" Height="63" Margin="505.718,673.094,0,0" VerticalAlignment="Top" Width="60" Source="rightArrow.png" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+                <TextBlock HorizontalAlignment="Left" Height="280.5" Margin="85.718,137.594,0,0" TextWrapping="Wrap" Text="5 steps to set up your baby's profile" VerticalAlignment="Top" Width="385.5" FontSize="24"/>
+            </Grid>
+            <Grid x:Name="SetUp2" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+                <TextBlock HorizontalAlignment="Left" Height="67.5" Margin="184.109,122.047,0,0" TextWrapping="Wrap" Text="Step 1/5" VerticalAlignment="Top" Width="199.5" FontSize="24"/>
+                <Image x:Name="left" HorizontalAlignment="Left" Height="57" Margin="42.218,662.594,0,0" VerticalAlignment="Top" Width="60" Source="left.png" MouseLeftButtonDown="left_MouseLeftButtonDown"/>
+                <Image x:Name="right" HorizontalAlignment="Left" Height="61.5" Margin="502.109,662.047,0,0" VerticalAlignment="Top" Width="58.5" Source="rightArrow.png" MouseLeftButtonDown="right_MouseLeftButtonDown"/>
+                <TextBlock HorizontalAlignment="Left" Height="40.5" Margin="266.609,344.047,0,0" TextWrapping="Wrap" Text="or" VerticalAlignment="Top" Width="46.5" FontSize="24"/>
+                <Image HorizontalAlignment="Left" Height="97.5" Margin="124.718,317.047,0,0" VerticalAlignment="Top" Width="118.5" Source="boy5.png"/>
+                <Image HorizontalAlignment="Left" Height="99" Margin="342.218,317.047,0,0" VerticalAlignment="Top" Width="118.5" Source="girl2.png"/>
+            </Grid>
+            <Grid x:Name="SetUp3" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
+                <TextBlock HorizontalAlignment="Left" Height="84" Margin="217.109,162.547,0,0" TextWrapping="Wrap" Text="Step 2/5" VerticalAlignment="Top" Width="190.5" FontSize="24"/>
+                <TextBlock HorizontalAlignment="Left" Height="93" Margin="164.609,267.547,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175.5" FontSize="24"><Run Text="Your baby's"/><LineBreak/><Run Text="name is :"/><LineBreak/><Run/></TextBlock>
+                <TextBox HorizontalAlignment="Left" Height="39" Margin="274.109,297.547,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115.5" FontSize="24"/>
+                <Image x:Name="left_Copy" HorizontalAlignment="Left" Height="57" Margin="42.218,662.594,0,0" VerticalAlignment="Top" Width="60" Source="left.png" MouseLeftButtonDown="left_Copy_MouseLeftButtonDown"/>
+                <Image x:Name="right_Copy" HorizontalAlignment="Left" Height="61.5" Margin="502.109,662.047,0,0" VerticalAlignment="Top" Width="58.5" Source="rightArrow.png" MouseLeftButtonDown="right_Copy_MouseLeftButtonDown"/>
+            </Grid>
+            <Grid x:Name="SetUp4" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
+                <Image x:Name="left_Copy1" HorizontalAlignment="Left" Height="57" Margin="42.218,662.594,0,0" VerticalAlignment="Top" Width="60" Source="left.png" MouseLeftButtonDown="left_Copy1_MouseLeftButtonDown"/>
+                <Image x:Name="right_Copy1" HorizontalAlignment="Left" Height="61.5" Margin="502.109,662.047,0,0" VerticalAlignment="Top" Width="58.5" Source="rightArrow.png" MouseLeftButtonDown="right_Copy1_MouseLeftButtonDown"/>
+                <TextBlock HorizontalAlignment="Left" Height="69" Margin="229.718,154.094,0,0" TextWrapping="Wrap" Text="Step 3/5" VerticalAlignment="Top" Width="148.5" FontSize="24"/>
+                <TextBlock HorizontalAlignment="Left" Height="49.5" Margin="96.218,242.594,0,0" TextWrapping="Wrap" Text="Weight:" VerticalAlignment="Top" Width="111" FontSize="24"/>
+                <TextBlock HorizontalAlignment="Left" Height="40.5" Margin="96.218,337.094,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="94.5" FontSize="24" Text="Height:"/>
+                <TextBox HorizontalAlignment="Left" Height="49.5" Margin="207.218,242.594,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" FontSize="24"/>
+                <TextBox HorizontalAlignment="Left" Height="49.5" Margin="207.218,328.094,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="171" FontSize="24"/>
+                <TextBlock HorizontalAlignment="Left" Height="49.5" Margin="414.218,242.594,0,0" TextWrapping="Wrap" Text="kg" VerticalAlignment="Top" Width="63" FontSize="24"/>
+                <TextBlock HorizontalAlignment="Left" Height="49.5" Margin="414.218,328.094,0,0" TextWrapping="Wrap" Text="cm" VerticalAlignment="Top" Width="63" FontSize="24"/>
+            </Grid>
+            <Grid x:Name="SetUp5" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True">
+                <Image x:Name="left_Copy2" HorizontalAlignment="Left" Height="57" Margin="42.218,662.594,0,0" VerticalAlignment="Top" Width="60" Source="left.png" MouseLeftButtonDown="left_Copy2_MouseLeftButtonDown"/>
+                <Image x:Name="right_Copy2" HorizontalAlignment="Left" Height="61.5" Margin="502.109,662.047,0,0" VerticalAlignment="Top" Width="58.5" Source="rightArrow.png" MouseLeftButtonDown="right_Copy2_MouseLeftButtonDown"/>
+                <TextBlock HorizontalAlignment="Left" Height="69" Margin="229.718,154.094,0,0" TextWrapping="Wrap" Text="Step 4/5" VerticalAlignment="Top" Width="148.5" FontSize="24"/>
+                <TextBlock HorizontalAlignment="Left" Height="109.5" Margin="189.218,265.094,0,0" TextWrapping="Wrap" Text="Customize a cartoon character for you baby:" VerticalAlignment="Top" Width="211.5" FontSize="24"/>
+                <Image HorizontalAlignment="Left" Height="70.5" Margin="84.218,463.094,0,0" VerticalAlignment="Top" Width="79.5" Source="custom1.png"/>
+                <Image HorizontalAlignment="Left" Height="70.5" Margin="412.718,463.094,0,0" VerticalAlignment="Top" Width="90" Source="cus3.png"/>
+                <Image HorizontalAlignment="Left" Height="66" Margin="243.218,463.094,0,0" VerticalAlignment="Top" Width="87" Source="cus2.png"/>
+            </Grid>
+            <Grid x:Name="SetUp6" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True">
+                <Image x:Name="left_Copy3" HorizontalAlignment="Left" Height="57" Margin="42.218,662.594,0,0" VerticalAlignment="Top" Width="60" Source="left.png" MouseLeftButtonDown="left_Copy3_MouseLeftButtonDown"/>
+                <Image x:Name="right_Copy3" HorizontalAlignment="Left" Height="61.5" Margin="502.109,662.047,0,0" VerticalAlignment="Top" Width="58.5" Source="rightArrow.png" MouseLeftButtonDown="right_Copy3_MouseLeftButtonDown"/>
+                <TextBlock HorizontalAlignment="Left" Height="69" Margin="229.718,154.094,0,0" TextWrapping="Wrap" Text="Step 5/5" VerticalAlignment="Top" Width="148.5" FontSize="24"/>
+                <TextBlock HorizontalAlignment="Left" Height="112.5" Margin="172.718,197.194,0,0" TextWrapping="Wrap" Text="Take a photo for your baby:" VerticalAlignment="Top" Width="246" FontSize="24"/>
+                <Image HorizontalAlignment="Left" Height="90" Margin="244.718,568.094,0,0" VerticalAlignment="Top" Width="85.5" Source="camera2.png"/>
+                <Rectangle Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="297" Margin="117.218,271.094,0,0" Stroke="Black" VerticalAlignment="Top" Width="373.5"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="Home" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+            <Image HorizontalAlignment="Left" Height="55.5" Margin="37.109,80.047,0,0" VerticalAlignment="Top" Width="58.5" Source="milk.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_3"/>
+            <Image HorizontalAlignment="Left" Height="66" Margin="37.109,195.547,0,0" VerticalAlignment="Top" Width="58.5" Source="sleep.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_5"/>
+            <Image HorizontalAlignment="Left" Height="52.5" Margin="37.109,318.547,0,0" VerticalAlignment="Top" Width="58.5" Source="reminder.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_7"/>
+            <Image HorizontalAlignment="Left" Height="79.5" Margin="73.109,632.047,0,0" VerticalAlignment="Top" Width="87" Source="camera2.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_16"/>
+            <Image HorizontalAlignment="Left" Height="58.5" Margin="196.109,653.047,0,0" VerticalAlignment="Top" Width="60" Source="record.png" RenderTransformOrigin="0.55,0.308" MouseLeftButtonDown="Image_MouseLeftButtonDown_10"/>
+            <Image HorizontalAlignment="Left" Height="58.5" Margin="313.109,653.047,0,0" VerticalAlignment="Top" Width="60" Source="profile.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_26"/>
+            <Image HorizontalAlignment="Left" Height="58.5" Margin="446.609,653.047,0,0" VerticalAlignment="Top" Width="66" Source="memory.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_20"/>
+            <Image HorizontalAlignment="Left" Height="96" Margin="479.609,494.047,0,0" VerticalAlignment="Top" Width="84" Source="setting.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_22"/>
+            <Image HorizontalAlignment="Left" Height="142.5" Margin="432.5,38.047,0,0" VerticalAlignment="Top" Width="157.5" Source="sun.png"/>
+            <Image HorizontalAlignment="Left" Height="286.8" Margin="160.109,261.547,0,0" VerticalAlignment="Top" Width="270.2" Source="babyMain.jpg" MouseEnter="message_MouseEnter" MouseLeave="message_MouseLeave" MouseLeftButtonDown="Image_MouseLeftButtonDown_24"/>
+            <Image x:Name="message" HorizontalAlignment="Left" Height="99.6" Margin="329.909,217.147,0,0" VerticalAlignment="Top" Width="148.5" Source="message2.png"/>
+            <TextBlock x:Name="messageText" HorizontalAlignment="Left" Height="43.2" Margin="345.109,241.147,0,0" TextWrapping="Wrap" Text="Click Me!" VerticalAlignment="Top" Width="85.2" FontSize="16" FontWeight="Bold"/>
+        </Grid>
+        <Grid x:Name="DietPlan" HorizontalAlignment="Left" Height="800" Margin="-0.609,1.453,0,-1.453" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+            <Grid x:Name="Diet" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+                <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
+                <Button Content="Analysis" HorizontalAlignment="Left" Height="54" Margin="327.218,676.094,0,0" VerticalAlignment="Top" Width="186" FontSize="24" Click="Button_Click"/>
+                <Path Data="M85.718,139.094 L84.218,629.594" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="491.5" Margin="84.218,139.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="2.5"/>
+                <Path Data="M86.718,139.094 L160.718,139.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="1" Margin="86.718,139.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="75"/>
+                <Path Data="M84.218,630.594 L513.218,630.594" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="1" Margin="84.218,630.594,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="430"/>
+                <Path Data="M513.218,630.594 L513.218,166.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="465.5" Margin="513.218,166.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+                <Path Data="M161.718,139.094 L161.718,169.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="31" Margin="161.718,139.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+                <Path Data="M161.718,166.094 L508.218,166.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="1" Margin="161.718,166.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="347.5"/>
+                <Path Data="M162.718,139.094 L228.218,139.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="1" Margin="162.718,139.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="66.5"/>
+                <Path Data="M229.218,139.094 L229.218,166.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="28" Margin="229.218,139.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+                <Path Data="M230.218,139.094 L285.218,139.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="1" Margin="230.218,139.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="56"/>
+                <Path Data="M286.218,139.094 L286.218,170.094" Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="32" Margin="286.218,139.094,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+                <Label Content="Plan 1" HorizontalAlignment="Left" Height="30" Margin="91.718,140.094,0,0" VerticalAlignment="Top" Width="70" FontSize="14"/>
+                <Label Content="Plan 2" HorizontalAlignment="Left" Height="30" Margin="162.718,140.094,0,0" VerticalAlignment="Top" Width="70" FontSize="14"/>
+                <Label Content="Plan 3" HorizontalAlignment="Left" Height="30" Margin="232.718,140.094,0,0" VerticalAlignment="Top" Width="70" FontSize="14"/>
+                <Label Content="Breakfast:" HorizontalAlignment="Left" Height="28.5" Margin="91.718,188.594,0,0" VerticalAlignment="Top" Width="85" FontSize="16"/>
+                <Label Content="Lunch:" HorizontalAlignment="Left" Height="28.5" Margin="91.718,331.094,0,0" VerticalAlignment="Top" Width="85" FontSize="16"/>
+                <Label Content="Dinner:" HorizontalAlignment="Left" Height="28.5" Margin="91.718,475.094,0,0" VerticalAlignment="Top" Width="85" FontSize="16"/>
+                <Image HorizontalAlignment="Left" Height="72" Margin="121.718,239.594,0,0" VerticalAlignment="Top" Width="93" Source="dietMilk.png"/>
+                <Image HorizontalAlignment="Left" Height="72" Margin="232.718,239.594,0,0" VerticalAlignment="Top" Width="70" Source="bread.png"/>
+                <Image HorizontalAlignment="Left" Height="58.5" Margin="348.218,239.594,0,0" VerticalAlignment="Top" Width="61.5" Source="add.png" RenderTransformOrigin="0.415,0.462" MouseLeftButtonDown="Image_MouseLeftButtonDown_28"/>
+                <Image HorizontalAlignment="Left" Height="72" Margin="121.718,379.094,0,0" VerticalAlignment="Top" Width="93" Source="dietMilk.png"/>
+                <Image HorizontalAlignment="Left" Height="72" Margin="121.718,529.094,0,0" VerticalAlignment="Top" Width="93" Source="dietMilk.png"/>
+                <Image HorizontalAlignment="Left" Height="58.5" Margin="348.218,379.094,0,0" VerticalAlignment="Top" Width="61.5" Source="add.png" RenderTransformOrigin="0.415,0.462" MouseLeftButtonDown="Image_MouseLeftButtonDown_28"/>
+                <Image HorizontalAlignment="Left" Height="58.5" Margin="348.218,529.094,0,0" VerticalAlignment="Top" Width="61.5" Source="add.png" RenderTransformOrigin="0.415,0.462" MouseLeftButtonDown="Image_MouseLeftButtonDown_28"/>
+                <Image HorizontalAlignment="Left" Height="72" Margin="232.718,379.094,0,0" VerticalAlignment="Top" Width="70" Source="vege.png"/>
+                <Image HorizontalAlignment="Left" Height="72" Margin="232.718,529.094,0,0" VerticalAlignment="Top" Width="70" Source="eggplant.png"/>
+                <Label Content="80ml" HorizontalAlignment="Left" Height="28.5" Margin="135.718,308.827,0,0" VerticalAlignment="Top" Width="54.5" FontSize="16"/>
+                <Label Content="80ml" HorizontalAlignment="Left" Height="28.5" Margin="135.718,451.094,0,0" VerticalAlignment="Top" Width="54.5" FontSize="16"/>
+                <Label Content="80ml" HorizontalAlignment="Left" Height="28.5" Margin="135.718,597.094,0,0" VerticalAlignment="Top" Width="54.5" FontSize="16"/>
+                <Label HorizontalAlignment="Left" Height="48" Margin="248.218,311.594,0,0" VerticalAlignment="Top" Width="54.5" FontSize="16" Content="200g"/>
+                <Label Content="300g" HorizontalAlignment="Left" Height="48" Margin="248.218,457.327,0,0" VerticalAlignment="Top" Width="54.5" FontSize="16"/>
+                <Label Content="100g" HorizontalAlignment="Left" Height="48" Margin="248.218,597.094,0,0" VerticalAlignment="Top" Width="54.5" FontSize="16"/>
+            </Grid>
+            <Grid x:Name="Analysis" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
+                <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
+                <Image HorizontalAlignment="Left" Height="51" Margin="45.218,40.094,0,0" VerticalAlignment="Top" Width="76.5" Source="back.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_1"/>
+                <Image HorizontalAlignment="Left" Height="384" Margin="58.718,109.094,0,0" VerticalAlignment="Top" Width="450" Source="eatwell_plate2.jpg"/>
+                <TextBlock HorizontalAlignment="Left" Height="133" Margin="58.718,498.094,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="450" FontSize="24"><Run Text="Comment:"/><LineBreak/><Run Text="Your baby's diet plan is scientific :D"/></TextBlock>
+            </Grid>
+            <Grid x:Name="Change" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
+                <Path Data="M31.809,99.347 L531.03208,99.347" HorizontalAlignment="Left" Height="3" Margin="30.809,146.347,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="502.223"/>
+                <Path Data="M30.809,236.947 L533.04219,236.947" HorizontalAlignment="Left" Height="3" Margin="29.809,295.947,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="505.233"/>
+                <Path Data="M30.809,385.747 L533.04219,385.747" HorizontalAlignment="Left" Height="3" Margin="29.809,442.747,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="505.233"/>
+                <Path Data="M30.809,534.547 L533.12374,534.547" HorizontalAlignment="Left" Height="3" Margin="29.809,607.547,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="505.315"/>
+                <Label HorizontalAlignment="Left" Height="62.4" Margin="30.809,102.947,0,0" VerticalAlignment="Top" Width="118.8" FontSize="24" Content="Milk"/>
+                <Label HorizontalAlignment="Left" Height="62.4" Margin="30.809,251.547,0,0" VerticalAlignment="Top" Width="142.8" FontSize="24" Content="Vegetables"/>
+                <Label HorizontalAlignment="Left" Height="62.4" Margin="30.809,397.374,0,0" VerticalAlignment="Top" Width="118.8" FontSize="24" Content="Grains"/>
+                <Label HorizontalAlignment="Left" Height="62.4" Margin="30.809,564.547,0,0" VerticalAlignment="Top" Width="118.8" FontSize="24" Content="Meat"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="283.409,39.747,0,0" VerticalAlignment="Top" Width="80" Source="search.png"/>
+                <TextBox HorizontalAlignment="Left" Height="35.2" Margin="362.609,58.947,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102.4" BorderBrush="Black"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="30.809,177.947,0,0" VerticalAlignment="Top" Width="80" Source="milk2.png"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="115.809,177.947,0,0" VerticalAlignment="Top" Width="80" Source="dietMilk.png"/>
+                <Image HorizontalAlignment="Left" Height="118" Margin="178.609,160.347,0,0" VerticalAlignment="Top" Width="112.2" Source="milk3.png"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="391.609,177.947,0,0" VerticalAlignment="Top" Width="80" Source="milk4.png"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="30.809,323.774,0,0" VerticalAlignment="Top" Width="80" Source="tomato.png"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="115.809,323.774,0,0" VerticalAlignment="Top" Width="80" Source="carrot.png"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="200.809,323.774,0,0" VerticalAlignment="Top" Width="80" Source="broccoli.png"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="285.809,323.774,0,0" VerticalAlignment="Top" Width="80" Source="mushroom.png"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="370.809,323.774,0,0" VerticalAlignment="Top" Width="80" Source="cabbage.png"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="30.809,464.774,0,0" VerticalAlignment="Top" Width="80" Source="bread.png"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="115.809,464.774,0,0" VerticalAlignment="Top" Width="80" Source="bread2.png"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="200.809,464.774,0,0" VerticalAlignment="Top" Width="80" Source="rice.png"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="285.809,464.774,0,0" VerticalAlignment="Top" Width="80" Source="noodle.png"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="370.809,464.774,0,0" VerticalAlignment="Top" Width="80" Source="grains2.png"/>
+                <Image HorizontalAlignment="Left" Height="86.6" Margin="30.809,622.947,0,0" VerticalAlignment="Top" Width="92" Source="beef.png" RenderTransformOrigin="0.513,0.921"/>
+                <Image HorizontalAlignment="Left" Height="86.6" Margin="137.809,626.947,0,0" VerticalAlignment="Top" Width="85" Source="pork.png"/>
+                <Image HorizontalAlignment="Left" Height="81.6" Margin="240.809,626.947,0,0" VerticalAlignment="Top" Width="102.4" Source="chicken.png"/>
+                <Image HorizontalAlignment="Left" Height="106" Margin="329.809,613.547,0,0" VerticalAlignment="Top" Width="153" Source="fish.png"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="285.809,177.947,0,0" VerticalAlignment="Top" Width="80" Source="breastFeeding.png"/>
+                <Image HorizontalAlignment="Left" Height="73.6" Margin="450.809,323.774,0,0" VerticalAlignment="Top" Width="80" Source="eggplant.png"/>
+                <Image HorizontalAlignment="Left" Height="42.4" Margin="526.209,8.547,0,0" VerticalAlignment="Top" Width="46.4" Source="exit.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_27"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="SleepCycle" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+            <Grid x:Name="Today" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+                <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
+                <Label Content="Today" HorizontalAlignment="Center" Height="61.5" Margin="242.359,100.094,275.141,0" VerticalAlignment="Top" Width="82.5" FontSize="24" RenderTransformOrigin="0.32,0.415"/>
+                <Image HorizontalAlignment="Left" Height="54" Margin="481.718,676.094,0,0" VerticalAlignment="Top" Width="61.5" Source="rightArrow.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_6"/>
+            </Grid>
+            <Grid x:Name="Week" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+                <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
+                <Label Content="This week" HorizontalAlignment="Center" Height="72" Margin="234.859,92.594,228.641,0" VerticalAlignment="Top" Width="136.5" FontSize="24" RenderTransformOrigin="0.32,0.415"/>
+                <Image HorizontalAlignment="Left" Height="61.5" Margin="39.218,56.594,0,0" VerticalAlignment="Top" Width="64.5" Source="back.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_4"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="Reminder" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+            <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
+            <Image HorizontalAlignment="Left" Height="79.5" Margin="58.718,66.547,0,0" VerticalAlignment="Top" Width="99" Source="reminder2.png"/>
+            <Image HorizontalAlignment="Left" Height="79.5" Margin="58.718,204.547,0,0" VerticalAlignment="Top" Width="99" Source="reminder2.png"/>
+            <Image HorizontalAlignment="Left" Height="79.5" Margin="58.718,356.047,0,0" VerticalAlignment="Top" Width="99" Source="reminder2.png"/>
+            <Image HorizontalAlignment="Left" Height="79.5" Margin="58.718,497.047,0,0" VerticalAlignment="Top" Width="99" Source="add.png"/>
+            <TextBlock HorizontalAlignment="Left" Height="58.5" Margin="179.609,87.547,0,0" TextWrapping="Wrap" Text="Tooth brushing" VerticalAlignment="Top" Width="279" FontSize="24" TextDecorations="{x:Null}"/>
+            <TextBlock HorizontalAlignment="Left" Height="58.5" Margin="179.609,225.547,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="279" FontSize="24" TextDecorations="{x:Null}" Text="Prepare breakfast"/>
+            <TextBlock HorizontalAlignment="Left" Height="58.5" Margin="179.609,377.047,0,0" TextWrapping="Wrap" Text="bed-time" VerticalAlignment="Top" Width="279" FontSize="24" TextDecorations="{x:Null}"/>
+            <Label Content="9 AM" HorizontalAlignment="Left" Height="29.5" Margin="70.109,149.047,0,0" VerticalAlignment="Top" Width="66.609" FontSize="18"/>
+            <Label Content="9:30 AM" HorizontalAlignment="Left" Height="29.5" Margin="70.109,289.047,0,0" VerticalAlignment="Top" Width="87.609" FontSize="18"/>
+            <Label Content="10 PM" HorizontalAlignment="Left" Height="29.5" Margin="70.109,435.547,0,0" VerticalAlignment="Top" Width="66.609" FontSize="18"/>
+        </Grid>
+        <Grid x:Name="Record" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
+            <Grid x:Name="HeightAndWeight" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+                <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
+                <Image HorizontalAlignment="Left" Height="54" Margin="483.718,676.094,0,0" VerticalAlignment="Top" Width="55.2" MouseLeftButtonDown="Image_MouseLeftButtonDown_11" Source="rightArrow.png"/>
+                <TextBlock HorizontalAlignment="Left" Height="60" Margin="160.718,86.294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" FontSize="24"><Run Text="Height &amp; Weight"/><LineBreak/><Run/></TextBlock>
+                <Button Content="Report" HorizontalAlignment="Left" Height="54" Margin="214.918,676.094,0,0" VerticalAlignment="Top" Width="207.6" FontSize="24" Click="Button_Click_1"/>
+            </Grid>
+            <Grid x:Name="Nutrition" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+                <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
+                <Image HorizontalAlignment="Left" Height="56.4" Margin="38.318,22.694,0,0" VerticalAlignment="Top" Width="62.118" Source="back.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_8"/>
+                <Image HorizontalAlignment="Left" Height="54" Margin="483.718,676.094,0,0" VerticalAlignment="Top" Width="55.2" MouseLeftButtonDown="Image_MouseLeftButtonDown_12" Source="rightArrow.png"/>
+                <TextBlock HorizontalAlignment="Left" Height="60" Margin="160.718,86.294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" FontSize="24" Text="Nutrition"/>
+                <Button Content="Report" HorizontalAlignment="Left" Height="54" Margin="214.918,676.094,0,0" VerticalAlignment="Top" Width="207.6" FontSize="24" Click="Button_Click_1"/>
+            </Grid>
+            <Grid x:Name="Sleeping" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+                <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
+                <Image HorizontalAlignment="Left" Height="56.4" Margin="38.318,22.694,0,0" VerticalAlignment="Top" Width="62.118" Source="back.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_9" d:IsLocked="True"/>
+                <TextBlock HorizontalAlignment="Left" Height="60" Margin="160.718,86.294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" FontSize="24" Text="Sleeping hours"/>
+                <Button Content="Report" HorizontalAlignment="Left" Height="54" Margin="214.918,676.094,0,0" VerticalAlignment="Top" Width="207.6" FontSize="24" Click="Button_Click_1"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="Report" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
+            <Grid x:Name="ReportH" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+                <Image HorizontalAlignment="Left" Height="56.4" Margin="38.318,22.694,0,0" VerticalAlignment="Top" Width="62.118" Source="back.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_8"/>
+                <Image HorizontalAlignment="Left" Height="62.4" Margin="511.318,691.094,0,0" VerticalAlignment="Top" Width="61.2" Source="rightArrow.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_13"/>
+                <TextBlock HorizontalAlignment="Left" Height="109.2" Margin="109.318,112.094,0,0" TextWrapping="Wrap" Text="Compare to the last month, your baby grow ..." VerticalAlignment="Top" Width="393.6" FontSize="24"/>
+                <Image HorizontalAlignment="Left" Height="309.6" Margin="128.5,290.7,0,0" VerticalAlignment="Top" Width="262.8" Source="tall.png"/>
+                <TextBlock HorizontalAlignment="Left" Height="87.6" Margin="391.3,582.3,0,0" TextWrapping="Wrap" Text="2cm" VerticalAlignment="Top" Width="105.6" FontSize="36"/>
+                <Image HorizontalAlignment="Left" Height="52.8" Margin="199.1,290.7,0,0" VerticalAlignment="Top" Width="63.8" Source="height delta.png"/>
+            </Grid>
+            <Grid x:Name="ReportW" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+                <Image HorizontalAlignment="Left" Height="62.4" Margin="511.318,691.094,0,0" VerticalAlignment="Top" Width="61.2" Source="rightArrow.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_14"/>
+                <Image x:Name="left1_Copy" HorizontalAlignment="Left" Height="62.4" Margin="36.118,691.094,0,0" VerticalAlignment="Top" Width="61.2" Source="left.png" MouseLeftButtonDown="left1_Copy_MouseLeftButtonDown"/>
+                <TextBlock HorizontalAlignment="Left" Height="109.2" Margin="109.318,112.094,0,0" TextWrapping="Wrap" Text="Increase ..." VerticalAlignment="Top" Width="393.6" FontSize="24"/>
+                <Image HorizontalAlignment="Left" Height="232.8" Margin="166.918,258.194,0,0" VerticalAlignment="Top" Width="266.4" Source="weight2.png"/>
+                <TextBlock HorizontalAlignment="Left" Height="79.2" Margin="261.718,495.994,0,0" TextWrapping="Wrap" Text="2kg" VerticalAlignment="Top" Width="104.4" FontSize="36"/>
+            </Grid>
+            <Grid x:Name="ReportResult" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+                <Image HorizontalAlignment="Left" Height="62.4" Margin="511.318,691.094,0,0" VerticalAlignment="Top" Width="61.2" Source="rightArrow.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_15"/>
+                <Image x:Name="left1" HorizontalAlignment="Left" Height="62.4" Margin="36.118,691.094,0,0" VerticalAlignment="Top" Width="61.2" Source="left.png" MouseLeftButtonDown="left1_MouseLeftButtonDown"/>
+                <TextBlock HorizontalAlignment="Left" Height="282" Margin="109.318,226.094,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="405.6" FontSize="48"><Run Text="Eat well "/><LineBreak/><Run Text="            &amp;"/><LineBreak/><Run Text="            Sleep well"/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" Height="129.6" Margin="128.518,536.894,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="357.6" FontSize="24"><Run Text="balanced diet day: 26/30"/><LineBreak/><Run Text="sleeping well day: 27/30"/></TextBlock>
+                <Image HorizontalAlignment="Left" Height="102.9" Margin="372.118,226.094,0,0" VerticalAlignment="Top" Width="114" Source="dietMilk.png"/>
+                <Image HorizontalAlignment="Left" Height="148.5" Margin="109.318,329.294,0,0" VerticalAlignment="Top" Width="146.4" Source="sleepWell.png"/>
+            </Grid>
+            <Grid x:Name="ReportEval" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+                <Image x:Name="left1_Copy1" HorizontalAlignment="Left" Height="62.4" Margin="36.118,691.094,0,0" VerticalAlignment="Top" Width="61.2" Source="left.png" MouseLeftButtonDown="left1_Copy1_MouseLeftButtonDown"/>
+                <TextBlock HorizontalAlignment="Left" Height="109.2" Margin="109.318,112.094,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="393.6" FontSize="24" Text="Your baby is growing in the right track!!"/>
+                <Button Content="Report End" HorizontalAlignment="Left" Height="62.4" Margin="194.518,691.094,0,0" VerticalAlignment="Top" Width="241.2" FontSize="24" Click="Button_Click_2"/>
+                <Image HorizontalAlignment="Left" Height="292.8" Margin="153.718,254.594,0,0" VerticalAlignment="Top" Width="327.6" Source="parentAndChild.png"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="Camera" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+            <Grid x:Name="TakePhoto" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
+                <Image x:Name="home" HorizontalAlignment="Left" Height="55.689" Margin="23.2,692.626,0,0" VerticalAlignment="Top" Width="59.358" Source="home.png" MouseLeftButtonDown="CameraIcon_Copy_MouseLeftButtonDown"/>
+                <Image x:Name="DashedLine" HorizontalAlignment="Left" Height="748.131" VerticalAlignment="Top" Width="560.244" Margin="10,51.869,0,0" Source="verticalDashedLine2.png"/>
+                <Image x:Name="CameraIcon" HorizontalAlignment="Left" Height="112.146" Margin="241.936,611.514,0,0" VerticalAlignment="Top" Width="137.037" Source="camera2.png" MouseLeftButtonDown="CameraIcon_MouseLeftButtonDown"/>
+            </Grid>
+            <Grid x:Name="SavePhoto" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+                <Image x:Name="back_Copy" HorizontalAlignment="Left" Height="60.79" Margin="10,10,0,0" VerticalAlignment="Top" Width="86.007" Source="back.png" RenderTransformOrigin="0.778,0.512" MouseLeftButtonDown="back_Copy_MouseLeftButtonDown"/>
+                <Button Content="Save to Album&#xA;" Margin="155.083,692.626,168.144,59.494" FontSize="24" RenderTransformOrigin="0.546,-0.17"/>
+                <Image HorizontalAlignment="Left" Height="411.833" VerticalAlignment="Top" Width="325.119" Margin="148.409,158.721,0,0" Source="babyPlaying.jpg"/>
+                <Image x:Name="home_Copy" HorizontalAlignment="Left" Height="55.689" Margin="23.2,692.626,0,0" VerticalAlignment="Top" Width="59.358" Source="home.png" MouseLeftButtonDown="CameraIcon_Copy_MouseLeftButtonDown"/>
+                <Label Content="Title:" HorizontalAlignment="Left" Height="50.227" Margin="155.083,108.494,0,0" VerticalAlignment="Top" Width="70.635" FontSize="24"/>
+                <Label Content="Time: 2:35pm&#xD;&#xA;Date: 2018/3/22" HorizontalAlignment="Left" Height="79.027" Margin="148.409,508.094,0,0" VerticalAlignment="Top" Width="244.109" FontSize="24"/>
+                <TextBox HorizontalAlignment="Left" Height="45.227" Margin="230.718,108.494,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137.8" FontSize="24"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="Profile" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+            <Path Data="M44.209,198.947 L359.47397,198.947" HorizontalAlignment="Left" Height="3" Margin="43.209,141.947,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="242.999"/>
+            <Label Content="Jimmy" HorizontalAlignment="Left" Height="100.8" Margin="369.009,56.147,0,0" VerticalAlignment="Top" Width="204.665" FontSize="48" FontFamily="Segoe Print"/>
+            <Label Content="BIRTHDAY&#xD;&#xA;05.12.17" HorizontalAlignment="Left" Height="83.2" Margin="43.209,181.747,0,0" VerticalAlignment="Top" Width="146.6" FontSize="24"/>
+            <Path Data="M44.209,198.947 L359.47397,198.947" HorizontalAlignment="Left" Height="3" Margin="43.209,264.947,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="172.665"/>
+            <Image HorizontalAlignment="Left" Height="86.2" Margin="413.809,181.747,0,0" VerticalAlignment="Top" Width="86.265" Source="ruler1.png"/>
+            <Image HorizontalAlignment="Left" Height="86.2" Margin="425.809,272.947,0,0" VerticalAlignment="Top" Width="62.4" Source="weightIncrease.png"/>
+            <Image HorizontalAlignment="Left" Height="86.2" Margin="43.209,322.547,0,0" VerticalAlignment="Top" Width="62.4" Source="time.png"/>
+            <Image HorizontalAlignment="Left" Height="147" Margin="27.209,425.747,0,0" VerticalAlignment="Top" Width="123.065" Source="babyMood.png"/>
+            <Image HorizontalAlignment="Left" Height="94.2" Margin="256.009,442.547,0,0" VerticalAlignment="Top" Width="86.265" Source="eyes.png"/>
+            <Image HorizontalAlignment="Left" Height="94.2" Margin="487.409,442.547,0,0" VerticalAlignment="Top" Width="86.265" Source="toy.png"/>
+            <Path Data="M44.209,198.947 L359.47397,198.947" HorizontalAlignment="Left" Height="3" Margin="43.209,405.747,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="146.6"/>
+            <Path Data="M44.209,198.947 L359.47397,198.947" HorizontalAlignment="Left" Height="3" Margin="43.209,541.747,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="318.265"/>
+            <Path Data="M44.209,198.947 L359.47397,198.947" HorizontalAlignment="Left" Height="3" Margin="386.935,173.747,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="203.065"/>
+            <Path Data="M44.209,198.947 L359.47397,198.947" HorizontalAlignment="Left" Height="3" Margin="413.809,364.147,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="176.191"/>
+            <Path Data="M44.209,198.947 L359.47397,198.947" HorizontalAlignment="Left" Height="3" Margin="413.809,533.747,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="176.191"/>
+            <Path Data="M44.209,198.947 L359.47397,198.947" HorizontalAlignment="Left" Height="3" Margin="43.209,720.947,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="342.265"/>
+            <Image HorizontalAlignment="Left" Height="51" Margin="65.274,613.747,0,0" VerticalAlignment="Top" Width="62.4" Source="babysit.png"/>
+            <Image HorizontalAlignment="Left" Height="51" Margin="136.674,615.747,0,0" VerticalAlignment="Top" Width="57.135" Source="babycrawl.png"/>
+            <Image HorizontalAlignment="Left" Height="76.6" Margin="210.139,602.147,0,0" VerticalAlignment="Top" Width="60.665" Source="baby standing.png"/>
+            <Image HorizontalAlignment="Left" Height="62.6" Margin="272.604,602.147,0,0" VerticalAlignment="Top" Width="69.67" Source="babywalk.png"/>
+            <Label Content="Time of arrival:" HorizontalAlignment="Left" Height="44.267" Margin="110.609,287.097,0,0" VerticalAlignment="Top" Width="148.068" FontSize="20" FontFamily="Papyrus"/>
+            <Label Content="1:59PM" HorizontalAlignment="Left" Height="59.316" Margin="113.674,331.364,0,0" VerticalAlignment="Top" Width="143.13" FontSize="36"/>
+            <Label Content="80cm" HorizontalAlignment="Left" Height="37.334" Margin="500.074,201.48,0,0" VerticalAlignment="Top" Width="66.802" FontSize="20"/>
+            <Label Content="40kg" HorizontalAlignment="Left" Height="37.334" Margin="506.872,287.097,0,0" VerticalAlignment="Top" Width="66.802" FontSize="20"/>
+            <Label Content="Favorite toy:" HorizontalAlignment="Left" Height="51.867" Margin="385.474,390.68,0,0" VerticalAlignment="Top" Width="189.326" FontSize="24" FontFamily="Showcard Gothic"/>
+            <Label Content="Black hair &amp; Black eyes" HorizontalAlignment="Left" Height="44.267" Margin="127.674,413.747,0,0" VerticalAlignment="Top" Width="257.8" FontSize="20" FontFamily="Segoe UI Black"/>
+            <Label Content="5/16" HorizontalAlignment="Left" Height="30.067" Margin="65.274,678.747,0,0" VerticalAlignment="Top" Width="50.134" FontWeight="Bold" FontSize="14"/>
+            <Label Content="12/17" HorizontalAlignment="Left" Height="30.067" Margin="127.674,678.747,0,0" VerticalAlignment="Top" Width="70.934" FontSize="14" FontWeight="Bold"/>
+            <Label Content="??/??" HorizontalAlignment="Left" Height="30.067" Margin="215.274,678.747,0,0" VerticalAlignment="Top" Width="70.934" FontWeight="Bold" FontSize="14"/>
+            <Label Content="??/??" HorizontalAlignment="Left" Height="30.067" Margin="286.208,678.747,0,0" VerticalAlignment="Top" Width="70.934" FontSize="14" FontWeight="Bold"/>
+            <Path Data="M408.809,181.747 L408.809,359.147" HorizontalAlignment="Left" Height="180.4" Margin="407.809,180.747,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="3"/>
+            <Path Data="M414.609,532.147 L414.609,425.67916" HorizontalAlignment="Left" Height="109.468" Margin="413.609,424.679,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="3"/>
+            <Image HorizontalAlignment="Left" Height="284.267" Margin="212.074,141.947,0,0" VerticalAlignment="Top" Width="195.735" Source="profile5.png"/>
+            <Path Data="M189.809,541.747 L189.809,462.91246" HorizontalAlignment="Left" Height="81.835" Margin="188.809,461.912,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="3" VerticalAlignment="Top" Width="3"/>
+            <Image HorizontalAlignment="Left" Height="54" Margin="487.409,669.947,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
+        </Grid>
+        <Grid x:Name="Memory" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+            <Grid x:Name="Msit" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+                <Image x:Name="album_icon" HorizontalAlignment="Left" Height="82.8" Margin="493.318,26.894,0,0" VerticalAlignment="Top" Width="76.8" Source="album.png" MouseLeftButtonDown="album_icon_MouseLeftButtonDown"/>
+                <Image HorizontalAlignment="Left" Height="56.4" Margin="516.118,379.694,0,0" VerticalAlignment="Top" Width="54" Source="rightArrow.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_17"/>
+                <Image x:Name="home_Copy1" HorizontalAlignment="Left" Height="55.689" Margin="23.2,692.626,0,0" VerticalAlignment="Top" Width="59.358" Source="home.png" MouseLeftButtonDown="CameraIcon_Copy_MouseLeftButtonDown"/>
+                <Image HorizontalAlignment="Left" Height="247.2" Margin="177.718,250.094,0,0" VerticalAlignment="Top" Width="229.2" Source="babysit.png"/>
+                <Path Data="M52.918,608.894 L570.14027,608.894" Fill="Black" HorizontalAlignment="Left" Height="10" Margin="52.918,608.894,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="518.222" StrokeThickness="5"/>
+                <Path Data="M108.118,608.894 L108.118,576.40523" Fill="Black" HorizontalAlignment="Left" Height="37.489" Margin="106.118,574.405,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M480.118,608.894 L480.118,479.294" Fill="Black" HorizontalAlignment="Left" Height="134.6" Margin="478.118,477.294,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M274.918,611.894 L274.918,540.33284" Fill="Black" HorizontalAlignment="Left" Height="76.561" Margin="227.918,538.333,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Image HorizontalAlignment="Left" Height="61.039" Margin="201.118,489.294,0,0" VerticalAlignment="Top" Width="102" Source="memoryStar.png"/>
+                <Image HorizontalAlignment="Left" Height="111.8" Margin="436.918,415.694,0,0" VerticalAlignment="Top" Width="89.8" Source="audio.png"/>
+                <Label Content="First Sit" HorizontalAlignment="Left" Height="53.911" Margin="65.758,537.994,0,0" VerticalAlignment="Top" Width="91.56" FontSize="22"/>
+            </Grid>
+            <Grid x:Name="Mcrawl" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+                <Image x:Name="album_icon_Copy" HorizontalAlignment="Left" Height="82.8" Margin="493.318,26.894,0,0" VerticalAlignment="Top" Width="76.8" Source="album.png" MouseLeftButtonDown="album_icon_MouseLeftButtonDown"/>
+                <Image HorizontalAlignment="Left" Height="56.4" Margin="516.118,379.694,0,0" VerticalAlignment="Top" Width="54" Source="rightArrow.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_18"/>
+                <Image x:Name="left2_Copy" HorizontalAlignment="Left" Height="56.4" Margin="25.318,379.694,0,0" VerticalAlignment="Top" Width="54" Source="left.png" MouseLeftButtonDown="left2_Copy_MouseLeftButtonDown"/>
+                <Image x:Name="home_Copy2" HorizontalAlignment="Left" Height="55.689" Margin="23.2,692.626,0,0" VerticalAlignment="Top" Width="59.358" Source="home.png" MouseLeftButtonDown="CameraIcon_Copy_MouseLeftButtonDown"/>
+                <Image HorizontalAlignment="Left" Height="247.2" Margin="177.718,250.094,0,0" VerticalAlignment="Top" Width="229.2" Source="babycrawl.png"/>
+                <Path Data="M52.918,608.894 L570.14027,608.894" Fill="Black" HorizontalAlignment="Left" Height="10" Margin="52.918,608.894,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="518.222" StrokeThickness="5"/>
+                <Path Data="M108.118,608.894 L108.118,576.40523" Fill="Black" HorizontalAlignment="Left" Height="98.689" Margin="106.118,513.205,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M480.118,608.894 L480.118,479.294" Fill="Black" HorizontalAlignment="Left" Height="73.561" Margin="478.118,538.333,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M274.918,611.894 L274.918,540.33284" Fill="Black" HorizontalAlignment="Left" Height="76.561" Margin="289.418,538.333,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Image HorizontalAlignment="Left" Height="61.039" Margin="449.418,489.594,0,0" VerticalAlignment="Top" Width="102" Source="memoryStar.png"/>
+                <Label Content="First crawl" HorizontalAlignment="Left" Height="53.911" Margin="53.758,479.494,0,0" VerticalAlignment="Top" Width="130.36" FontSize="22"/>
+                <Image HorizontalAlignment="Left" Height="61.039" Margin="274.318,486.594,0,0" VerticalAlignment="Top" Width="64.8" Source="image.png"/>
+            </Grid>
+            <Grid x:Name="Mstand" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
+                <Image x:Name="album_icon_Copy1" HorizontalAlignment="Left" Height="82.8" Margin="493.318,26.894,0,0" VerticalAlignment="Top" Width="76.8" Source="album.png" MouseLeftButtonDown="album_icon_MouseLeftButtonDown"/>
+                <Image HorizontalAlignment="Left" Height="56.4" Margin="516.118,379.694,0,0" VerticalAlignment="Top" Width="54" Source="rightArrow.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_19"/>
+                <Image x:Name="left2" HorizontalAlignment="Left" Height="56.4" Margin="25.318,379.694,0,0" VerticalAlignment="Top" Width="54" Source="left.png" MouseLeftButtonDown="left2_MouseLeftButtonDown"/>
+                <Image x:Name="home_Copy3" HorizontalAlignment="Left" Height="55.689" Margin="23.2,692.626,0,0" VerticalAlignment="Top" Width="59.358" Source="home.png" MouseLeftButtonDown="CameraIcon_Copy_MouseLeftButtonDown"/>
+                <Image HorizontalAlignment="Left" Height="307.2" Margin="177.718,190.094,0,0" VerticalAlignment="Top" Width="259.2" Source="baby standing.png"/>
+                <Path Data="M52.918,608.894 L570.14027,608.894" Fill="Black" HorizontalAlignment="Left" Height="10" Margin="52.918,608.894,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="518.222" StrokeThickness="5"/>
+                <Path Data="M108.118,608.894 L108.118,576.40523" Fill="Black" HorizontalAlignment="Left" Height="122.6" Margin="106.118,489.294,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M480.118,608.894 L480.118,479.294" Fill="Black" HorizontalAlignment="Left" Height="134.6" Margin="478.118,477.294,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M274.918,611.894 L274.918,540.33284" Fill="Black" HorizontalAlignment="Left" Height="76.561" Margin="227.918,538.333,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Image HorizontalAlignment="Left" Height="61.039" Margin="199.618,486.294,0,0" VerticalAlignment="Top" Width="102" Source="memoryStar.png"/>
+                <Image HorizontalAlignment="Left" Height="111.8" Margin="435.418,402.562,0,0" VerticalAlignment="Top" Width="89.8" Source="memoryStar.png"/>
+                <Label Content="First Stand" HorizontalAlignment="Left" Height="53.911" Margin="52.918,455.951,0,0" VerticalAlignment="Top" Width="130.36" FontSize="22"/>
+            </Grid>
+            <Grid x:Name="Mwalk" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+                <Image x:Name="album_icon_Copy2" HorizontalAlignment="Left" Height="82.8" Margin="493.318,26.894,0,0" VerticalAlignment="Top" Width="76.8" Source="album.png" MouseLeftButtonDown="album_icon_MouseLeftButtonDown"/>
+                <Image x:Name="left2_Copy1" HorizontalAlignment="Left" Height="56.4" Margin="25.318,379.694,0,0" VerticalAlignment="Top" Width="54" Source="left.png" MouseLeftButtonDown="left2_Copy1_MouseLeftButtonDown"/>
+                <Image x:Name="home_Copy4" HorizontalAlignment="Left" Height="55.689" Margin="23.2,692.626,0,0" VerticalAlignment="Top" Width="59.358" Source="home.png" MouseLeftButtonDown="CameraIcon_Copy_MouseLeftButtonDown"/>
+                <Image HorizontalAlignment="Left" Height="337.2" Margin="141.518,152.094,0,0" VerticalAlignment="Top" Width="295.4" Source="babywalk.png"/>
+                <Path Data="M52.918,608.894 L570.14027,608.894" Fill="Black" HorizontalAlignment="Left" Height="10" Margin="52.918,608.894,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="518.222" StrokeThickness="5"/>
+                <Path Data="M108.118,608.894 L108.118,576.40523" Fill="Black" HorizontalAlignment="Left" Height="73.561" Margin="106.118,538.333,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M480.118,608.894 L480.118,479.294" Fill="Black" HorizontalAlignment="Left" Height="134.6" Margin="478.118,477.294,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M274.918,611.894 L274.918,540.33284" Fill="Black" HorizontalAlignment="Left" Height="76.561" Margin="227.918,538.333,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Image HorizontalAlignment="Left" Height="61.039" Margin="201.118,487.794,0,0" VerticalAlignment="Top" Width="102" Source="image.png"/>
+                <Image HorizontalAlignment="Left" Height="111.8" Margin="436.918,415.694,0,0" VerticalAlignment="Top" Width="89.8" Source="audio.png"/>
+                <Label Content="First walk" HorizontalAlignment="Left" Height="53.911" Margin="61.258,503.494,0,0" VerticalAlignment="Top" Width="110.76" FontSize="22"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="Album" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+            <Image x:Name="home_Copy5" HorizontalAlignment="Left" Height="55.689" Margin="23.2,692.626,0,0" VerticalAlignment="Top" Width="59.358" Source="home.png" MouseLeftButtonDown="CameraIcon_Copy_MouseLeftButtonDown"/>
+            <Image HorizontalAlignment="Left" Height="47.3" Margin="23.2,10,0,0" VerticalAlignment="Top" Width="59.358" Source="back.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_21"/>
+            <Label Content="Family" HorizontalAlignment="Left" Height="50.4" Margin="103.909,274.747,0,0" VerticalAlignment="Top" Width="116.4" FontSize="24"/>
+            <Label Content="Birthday" HorizontalAlignment="Left" Height="50.4" Margin="363.109,274.747,0,0" VerticalAlignment="Top" Width="116.4" FontSize="24"/>
+            <Label Content="Funny&#xD;&#xA;Moment" HorizontalAlignment="Left" Height="74.4" Margin="103.909,562.447,0,0" VerticalAlignment="Top" Width="116.4" FontSize="24"/>
+            <Label Content="Baby's&#xD;&#xA;Singing" HorizontalAlignment="Left" Height="74.4" Margin="363.109,562.447,0,0" VerticalAlignment="Top" Width="116.4" FontSize="24"/>
+            <Image HorizontalAlignment="Left" Height="123.6" Margin="82.558,124.447,0,0" VerticalAlignment="Top" Width="137.751" Source="family.png"/>
+            <Image HorizontalAlignment="Left" Height="123.6" Margin="354.109,131.947,0,0" VerticalAlignment="Top" Width="137.751" Source="birhday.png"/>
+            <Image HorizontalAlignment="Left" Height="123.6" Margin="82.558,415.247,0,0" VerticalAlignment="Top" Width="137.751" Source="video.png"/>
+            <Image HorizontalAlignment="Left" Height="123.6" Margin="341.758,413.747,0,0" VerticalAlignment="Top" Width="137.751" Source="music.png"/>
+        </Grid>
+        <Grid x:Name="Setting" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
+            <Grid x:Name="Set" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
+                <Button Content="Theme" Margin="185.099,176.277,223.173,575.843" FontSize="36" FontWeight="Bold"/>
+                <Button Content="Support" Margin="185.099,333.027,223.173,412.423" FontSize="24" Click="Button_Click_4"/>
+                <Button Content="Theme" Margin="185.099,176.277,223.173,575.843" FontSize="24" Click="Button_Click_3"/>
+                <Button Content="About Us" Margin="185.099,503.117,223.173,249.003" FontSize="24" Click="Button_Click_5"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="185.099,56.05,0,0" Height="79.563" Width="191.728" FontSize="36" Text="Settings:"/>
+                <Image x:Name="home_Copy6" HorizontalAlignment="Left" Height="55.689" Margin="35.2,695.026,0,0" VerticalAlignment="Top" Width="59.358" Source="home.png" MouseLeftButtonDown="CameraIcon_Copy_MouseLeftButtonDown"/>
+                <Image HorizontalAlignment="Left" Height="147.623" Margin="381.827,29.65,0,0" VerticalAlignment="Top" Width="185.882" Source="babyMood.png"/>
+            </Grid>
+            <Grid x:Name="Theme" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
+                <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="29.963" Stroke="Black" VerticalAlignment="Top" Width="36.633" Margin="70.037,253.468,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="208.446,96.553,0,0" Height="79.563" Width="191.728" FontSize="36"><Run FontWeight="Bold" Text="Theme"/><Run Text=":"/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="61.7,181.116,0,0" Height="79.563" Width="191.728" FontSize="24"><Run FontWeight="Bold" Text="Colour"/><Run Text=":"/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="61.7,337.866,0,0" Height="79.563" Width="393.502" FontSize="24"><Run FontWeight="Bold" Text="Background"/><Run Text=":"/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="61.7,504.621,0,0" Height="79.563" Width="393.502" FontSize="24"><Run FontWeight="Bold" Text="Baby Character"/><Run Text=":"/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="208.446,584.184,0,0" Height="79.563" Width="213.406" FontSize="24" TextDecorations="Underline" FontWeight="Bold"/>
+                <Button Content="Apply" Margin="350.187,672.564,119.784,71.219" FontSize="24"/>
+                <Rectangle Fill="#FFFFF406" HorizontalAlignment="Left" Height="29.963" Stroke="Black" VerticalAlignment="Top" Width="36.633" Margin="142.746,253.468,0,0"/>
+                <Rectangle Fill="#FF7FFD00" HorizontalAlignment="Left" Height="29.963" Stroke="Black" VerticalAlignment="Top" Width="36.633" Margin="215.792,253.468,0,0"/>
+                <Rectangle Fill="#FFFD2A14" HorizontalAlignment="Left" Height="29.963" Stroke="Black" VerticalAlignment="Top" Width="36.633" Margin="289.508,253.468,0,0"/>
+                <Rectangle Fill="Blue" HorizontalAlignment="Left" Height="29.963" Stroke="Black" VerticalAlignment="Top" Width="36.633" Margin="362.217,253.468,0,0"/>
+                <Rectangle Fill="#FFFFA80E" HorizontalAlignment="Left" Height="29.963" Stroke="Black" VerticalAlignment="Top" Width="36.633" Margin="70.037,253.468,0,0"/>
+                <Image HorizontalAlignment="Left" Height="85.2" Margin="426.905,198.231,0,0" VerticalAlignment="Top" Width="96" Source="color.png" RenderTransformOrigin="0.588,0.352"/>
+                <Image x:Name="back_Copy5" HorizontalAlignment="Left" Height="85.803" Margin="61.7,397.418,0,0" VerticalAlignment="Top" Width="112.688" Source="background1.jpg" RenderTransformOrigin="0.778,0.512"/>
+                <Image x:Name="back_Copy6" HorizontalAlignment="Left" Height="85.803" Margin="252.453,397.418,0,0" VerticalAlignment="Top" Width="112.688" Source="background3.jpg" RenderTransformOrigin="0.982,0.547"/>
+                <Image x:Name="back_Copy7" HorizontalAlignment="Left" Height="85.803" Margin="410.217,397.418,0,0" VerticalAlignment="Top" Width="112.688" Source="background2.jpg" RenderTransformOrigin="0.778,0.512"/>
+                <Image x:Name="back_Copy9" HorizontalAlignment="Left" Height="60.79" Margin="23.2,10,0,0" VerticalAlignment="Top" Width="86.007" Source="back.png" RenderTransformOrigin="0.778,0.512" MouseLeftButtonDown="back_Copy9_MouseLeftButtonDown"/>
+                <Image HorizontalAlignment="Left" Height="70.5" Margin="63.818,565.094,0,0" VerticalAlignment="Top" Width="79.5" Source="custom1.png"/>
+                <Image HorizontalAlignment="Left" Height="70.5" Margin="392.318,565.094,0,0" VerticalAlignment="Top" Width="90" Source="cus3.png"/>
+                <Image HorizontalAlignment="Left" Height="66" Margin="222.818,565.094,0,0" VerticalAlignment="Top" Width="87" Source="cus2.png"/>
+            </Grid>
+            <Grid x:Name="Supp" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+                <Image x:Name="back_Copy2" HorizontalAlignment="Left" Height="60.79" Margin="23.2,10,0,0" VerticalAlignment="Top" Width="86.007" Source="back.png" RenderTransformOrigin="0.778,0.512" MouseLeftButtonDown="back_Copy9_MouseLeftButtonDown"/>
+                <Label Content="Support:" HorizontalAlignment="Left" Height="96.504" Margin="168.418,70.79,0,0" VerticalAlignment="Top" Width="261.6" FontSize="36" FontWeight="Bold"/>
+                <TextBlock HorizontalAlignment="Left" Height="147.6" Margin="109.207,190.094,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="385.611" FontSize="24"><Run Text="Icon resources from:"/><LineBreak/><Run Text="https://thenounproject.com/"/></TextBlock>
+            </Grid>
+            <Grid x:Name="About" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="213.447,56.05,0,0" Height="79.563" Width="191.728" FontSize="36"><Run FontWeight="Bold" Text="About Us"/><Run Text=":"/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="41.69,173.964,0,0" Height="72.893" Width="380.162" FontSize="36"><Run FontWeight="Bold" Text="Development Team"/><Run Text=":"/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="41.69,632.541,0,0" Height="72.893" Width="518.569" FontSize="36"><Run FontWeight="Bold" Text="Contact Us"/><Run Text=": email@live.ca"/></TextBlock>
+                <Image x:Name="back_Copy1" HorizontalAlignment="Left" Height="60.79" Margin="23.2,10,0,0" VerticalAlignment="Top" Width="86.007" Source="back.png" RenderTransformOrigin="0.778,0.512" MouseLeftButtonDown="back_Copy9_MouseLeftButtonDown"/>
+                <Image HorizontalAlignment="Left" Height="104.4" Margin="91.927,262.641,0,0" VerticalAlignment="Top" Width="104.4" Source="programmer1.png"/>
+                <Label Content="Paul" HorizontalAlignment="Left" Height="37.2" Margin="245.527,301.041,0,0" VerticalAlignment="Top" Width="153.6" FontSize="24"/>
+                <Image HorizontalAlignment="Left" Height="104.4" Margin="91.927,376.641,0,0" VerticalAlignment="Top" Width="104.4" Source="programmer2.png"/>
+                <Label Content="Dante" HorizontalAlignment="Left" Height="37.2" Margin="245.527,415.041,0,0" VerticalAlignment="Top" Width="153.6" FontSize="24"/>
+                <Image HorizontalAlignment="Left" Height="104.4" Margin="91.927,497.841,0,0" VerticalAlignment="Top" Width="104.4" Source="programmer4.png"/>
+                <Label Content="Jason" HorizontalAlignment="Left" Height="37.2" Margin="245.527,536.241,0,0" VerticalAlignment="Top" Width="153.6" FontSize="24"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="Loading" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+            <TextBlock HorizontalAlignment="Left" Height="109.2" Margin="138.1,186.6,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="342" FontSize="36" FontFamily="Goudy Stout"><Run Text="Loading..."/></TextBlock>
+            <Label Content="Tips:&#xA;&quot;Sleep when your baby sleeps.&quot;" HorizontalAlignment="Left" Height="132" Margin="111.7,371.4,0,0" VerticalAlignment="Top" Width="368.4" FontSize="24"/>
+            <Image HorizontalAlignment="Left" Height="85" Margin="268.9,266.4,0,0" VerticalAlignment="Top" Width="117.6" Source="babycrawl.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_23"/>
+            <Rectangle Fill="Black" HorizontalAlignment="Left" Height="15" Margin="170.3,306,0,0" VerticalAlignment="Top" Width="115.2"/>
+            <Rectangle HorizontalAlignment="Left" Height="13" Margin="316.9,306,0,0" VerticalAlignment="Top" Width="130.8" Stroke="Black"/>
+        </Grid>
+        <Grid x:Name="RealTimeDiet" HorizontalAlignment="Left" Height="800" Margin="0,-10,0,0" VerticalAlignment="Top" Width="599.391" d:IsLocked="True" d:IsHidden="True">
+            <Image HorizontalAlignment="Left" Height="134.4" Margin="79.909,69.4,0,0" VerticalAlignment="Top" Width="118.8" Source="realTime.png" RenderTransformOrigin="0.833,0.806"/>
+            <Label Content="Jimmy" HorizontalAlignment="Left" Height="63.6" Margin="246.709,95.8,0,0" VerticalAlignment="Top" Width="183.6" FontSize="36"/>
+            <Label Content="Age:" HorizontalAlignment="Left" Height="57.6" Margin="203.709,203.8,0,0" VerticalAlignment="Top" Width="85" FontSize="24"/>
+            <Label Content="Height:" HorizontalAlignment="Left" Height="57.6" Margin="113.709,293.8,0,0" VerticalAlignment="Top" Width="112.6" FontSize="24"/>
+            <Label Content="Weight:" HorizontalAlignment="Left" Height="57.6" Margin="113.709,376.6,0,0" VerticalAlignment="Top" Width="112.6" FontSize="24"/>
+            <Label Content="How is his feeding today?" HorizontalAlignment="Left" Height="57.6" Margin="113.709,461.8,0,0" VerticalAlignment="Top" Width="339.4" FontSize="24" RenderTransformOrigin="0.04,3.708"/>
+            <Image HorizontalAlignment="Left" Height="75.6" Margin="79.909,538.6,0,0" VerticalAlignment="Top" Width="85" Source="milk.png"/>
+            <Image HorizontalAlignment="Left" Height="75.6" Margin="231.309,538.6,0,0" VerticalAlignment="Top" Width="85" Source="bread.png"/>
+            <Image HorizontalAlignment="Left" Height="75.6" Margin="395.879,538.6,0,0" VerticalAlignment="Top" Width="85" Source="eggplant.png"/>
+            <Path Data="M180.709,619.2 L254.2791,619.2" HorizontalAlignment="Left" Height="5" Margin="151.739,609.2,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="74.57" StrokeThickness="3"/>
+            <Path Data="M180.709,619.2 L254.2791,619.2" HorizontalAlignment="Left" Height="5" Margin="316.309,609.2,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="74.57" StrokeThickness="3"/>
+            <Path Data="M180.709,619.2 L254.2791,619.2" HorizontalAlignment="Left" Height="5" Margin="485.879,609.2,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="74.57" StrokeThickness="3"/>
+            <Path Data="M180.709,619.2 L254.2791,619.2" HorizontalAlignment="Left" Height="5" Margin="288.709,243.2,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="45.6" StrokeThickness="3"/>
+            <Path Data="M180.709,619.2 L254.2791,619.2" HorizontalAlignment="Left" Height="5" Margin="231.309,333.2,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="85" StrokeThickness="3"/>
+            <Path Data="M180.709,619.2 L254.2791,619.2" HorizontalAlignment="Left" Height="5" Margin="231.309,416,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="85" StrokeThickness="3"/>
+            <Image HorizontalAlignment="Left" Height="75.6" Margin="84.409,626.7,0,0" VerticalAlignment="Top" Width="67" Source="add.png"/>
+            <TextBlock HorizontalAlignment="Left" Height="48.5" Margin="113.709,707.3,0,0" TextWrapping="Wrap" Text="Follow the diet plan?" VerticalAlignment="Top" Width="292" FontSize="24"/>
+            <CheckBox Content="" HorizontalAlignment="Left" Height="50.4" Margin="364.909,717.4,0,0" VerticalAlignment="Top" Width="50.4"/>
+            <Image HorizontalAlignment="Left" Height="64.8" Margin="502.9,39.4,0,0" VerticalAlignment="Top" Width="56.379" Source="exit.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_25"/>
+            <TextBox HorizontalAlignment="Left" Height="34.4" Margin="298.209,205.3,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="55.791" FontSize="24" BorderBrush="{x:Null}"/>
+            <TextBox HorizontalAlignment="Left" Height="34.4" Margin="246.709,298.8,0,0" TextWrapping="Wrap" Text="50cm" VerticalAlignment="Top" Width="87.6" FontSize="24" BorderBrush="{x:Null}"/>
+            <TextBox HorizontalAlignment="Left" Height="34.4" Margin="246.709,376.6,0,0" TextWrapping="Wrap" Text="20kg" VerticalAlignment="Top" Width="69.6" FontSize="24" BorderBrush="{x:Null}"/>
+            <TextBox HorizontalAlignment="Left" Height="34.4" Margin="151.739,569.8,0,0" TextWrapping="Wrap" Text="200ml" VerticalAlignment="Top" Width="79.57" FontSize="24" BorderBrush="{x:Null}"/>
+            <TextBox HorizontalAlignment="Left" Height="34.4" Margin="321.309,569.8,0,0" TextWrapping="Wrap" Text="500g" VerticalAlignment="Top" Width="74.57" FontSize="24" BorderBrush="{x:Null}"/>
+            <TextBox HorizontalAlignment="Left" Height="34.4" Margin="485.879,569.8,0,0" TextWrapping="Wrap" Text="120g" VerticalAlignment="Top" Width="73.4" FontSize="24" BorderBrush="{x:Null}"/>
+        </Grid>
 
-  </Grid>
+    </Grid>
 </Window>
