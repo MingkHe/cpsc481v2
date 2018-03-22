@@ -241,6 +241,7 @@
     <Resource Include="beef.png" />
     <Resource Include="chicken.png" />
     <Resource Include="fish.png" />
+    <Resource Include="Height&amp;Weight.png" />
     <Content Include="pie chart.jfif" />
     <Resource Include="eggplant.png" />
     <Resource Include="vege.png" />
