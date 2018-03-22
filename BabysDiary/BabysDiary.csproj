@@ -107,5 +107,26 @@
   <ItemGroup>
     <Resource Include="back.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="vedrticalDashedLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="verticalDashedLine2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="babyPlaying.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="background3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="background2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="babyCrawling.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
