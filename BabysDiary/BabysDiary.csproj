@@ -128,5 +128,32 @@
   <ItemGroup>
     <Resource Include="babyCrawling.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="stackOfPhotos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="babysitting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="123456789.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="crawling.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="babystanding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="babywalking.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
