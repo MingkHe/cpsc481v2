@@ -6,16 +6,16 @@
         xmlns:local="clr-namespace:BabysDiary"
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="600">
-    <Grid x:Name="MainGrid" Width="600" Height="800" Background="#FFFBFDFD">
-        <Grid x:Name="Login" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
+    <Grid x:Name="MainGrid" Width="600" Height="800">
+        <Grid x:Name="Login" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
             <TextBlock x:Name="title" HorizontalAlignment="Center" Height="182.461" Margin="77.873,70.543,58.071,0" TextWrapping="Wrap" Text="Baby's Diary" VerticalAlignment="Top" Width="464.056" FontWeight="Bold" FontSize="72"/>
             <TextBox x:Name="UserName" HorizontalAlignment="Left" Height="31.88" Margin="162.113,425.291,0,0" TextWrapping="Wrap" Text="Username:" VerticalAlignment="Top" Width="225.194"/>
             <TextBox x:Name="Password" HorizontalAlignment="Left" Height="33.915" Margin="162.113,491.764,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" Width="225.194"/>
             <Button x:Name="LoginButton" Content="Login" HorizontalAlignment="Left" Height="23.741" Margin="194.671,566.376,0,0" VerticalAlignment="Top" Width="164.147" Click="LoginButton_Click"/>
-            <Button x:Name="RegisterButton" Content="Register" HorizontalAlignment="Left" Height="23.062" Margin="194.671,611.144,0,0" VerticalAlignment="Top" Width="164.147"/>
+            <Button x:Name="RegisterButton" Content="Register" HorizontalAlignment="Left" Height="23.062" Margin="194.671,611.144,0,0" VerticalAlignment="Top" Width="164.147" Click="RegisterButton_Click"/>
             <Image HorizontalAlignment="Left" Height="196.8" Margin="176.671,170.404,0,0" VerticalAlignment="Top" Width="230.598" Source="babyTitle1.png"/>
         </Grid>
-        <Grid x:Name="Register" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+        <Grid x:Name="Register" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
             <TextBlock HorizontalAlignment="Left" Height="40.5" Margin="122.609,153.547,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="412.5" FontSize="24"><Run FontWeight="Bold" Text="Username: ">
                     <Run.Background>
                         <ImageBrush/>
@@ -43,14 +43,15 @@
                         <ImageBrush/>
                     </Run.Background>
                 </Run></TextBlock>
+            <Button Content="register" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Margin="223.5,639,0,0" Height="55.96" FontSize="24" Click="Button_Click_6"/>
         </Grid>
-        <Grid x:Name="SetUp" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-            <Grid x:Name="SetUp1" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
+        <Grid x:Name="SetUp" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True" d:IsLocked="True">
+            <Grid x:Name="SetUp1" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
                 <Image HorizontalAlignment="Left" Height="63" Margin="505.718,673.094,0,0" VerticalAlignment="Top" Width="60" Source="rightArrow.png" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
                 <TextBlock HorizontalAlignment="Left" Height="280.5" Margin="85.718,137.594,0,0" TextWrapping="Wrap" Text="5 steps to set up your baby's profile" VerticalAlignment="Top" Width="385.5" FontSize="24"/>
             </Grid>
-            <Grid x:Name="SetUp2" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-                <TextBlock HorizontalAlignment="Left" Height="67.5" Margin="184.109,122.047,0,0" TextWrapping="Wrap" Text="Step 1/5" VerticalAlignment="Top" Width="199.5" FontSize="24"/>
+            <Grid x:Name="SetUp2" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
+                <TextBlock HorizontalAlignment="Left" Height="67.5" Margin="230.132,164.735,0,0" TextWrapping="Wrap" Text="Step 1/5" VerticalAlignment="Top" Width="199.5" FontSize="24"/>
                 <Image x:Name="left" HorizontalAlignment="Left" Height="57" Margin="42.218,662.594,0,0" VerticalAlignment="Top" Width="60" Source="left.png" MouseLeftButtonDown="left_MouseLeftButtonDown"/>
                 <Image x:Name="right" HorizontalAlignment="Left" Height="61.5" Margin="502.109,662.047,0,0" VerticalAlignment="Top" Width="58.5" Source="rightArrow.png" MouseLeftButtonDown="right_MouseLeftButtonDown"/>
                 <TextBlock HorizontalAlignment="Left" Height="40.5" Margin="266.609,344.047,0,0" TextWrapping="Wrap" Text="or" VerticalAlignment="Top" Width="46.5" FontSize="24"/>
@@ -96,7 +97,7 @@
                 <Rectangle Fill="#FFFBFDFD" HorizontalAlignment="Left" Height="297" Margin="117.218,271.094,0,0" Stroke="Black" VerticalAlignment="Top" Width="373.5"/>
             </Grid>
         </Grid>
-        <Grid x:Name="Home" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
+        <Grid x:Name="Home" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
@@ -113,11 +114,11 @@
             <Image x:Name="message" HorizontalAlignment="Left" Height="99.6" Margin="329.909,217.147,0,0" VerticalAlignment="Top" Width="148.5" Source="message2.png"/>
             <TextBlock x:Name="messageText" HorizontalAlignment="Left" Height="43.2" Margin="345.109,241.147,0,0" TextWrapping="Wrap" Text="Click Me!" VerticalAlignment="Top" Width="85.2" FontSize="16" FontWeight="Bold"/>
             <Image x:Name="message_Copy" HorizontalAlignment="Left" Height="99.6" Margin="73.109,241.147,0,0" VerticalAlignment="Top" Width="148.5" Source="message2.png"/>
-            <TextBlock x:Name="messageText_Copy" HorizontalAlignment="Left" Height="43.2" Margin="74.909,266.547,0,0" TextWrapping="Wrap" Text=" Reminders" VerticalAlignment="Top" Width="85.2" FontSize="16" FontWeight="Bold"/>
+            <TextBlock x:Name="messageText_Copy" HorizontalAlignment="Left" Height="43.2" Margin="77.577,266.547,0,0" TextWrapping="Wrap" Text=" Reminders" VerticalAlignment="Top" Width="85.2" FontSize="16" FontWeight="Bold"/>
             <Image x:Name="message_Copy1" HorizontalAlignment="Left" Height="99.6" Margin="224.609,572.78,0,0" VerticalAlignment="Top" Width="148.5" Source="message2.png"/>
-            <TextBlock x:Name="messageText_Copy1" HorizontalAlignment="Left" Height="43.2" Margin="242.609,604.847,0,0" TextWrapping="Wrap" Text=" Report" VerticalAlignment="Top" Width="85.2" FontSize="16" FontWeight="Bold"/>
+            <TextBlock x:Name="messageText_Copy1" HorizontalAlignment="Left" Height="43.2" Margin="242.609,600.178,0,0" TextWrapping="Wrap" Text=" Report" VerticalAlignment="Top" Width="85.2" FontSize="16" FontWeight="Bold"/>
             <Image x:Name="message_Copy2" HorizontalAlignment="Left" Height="99.6" Margin="480,572.78,-28.5,0" VerticalAlignment="Top" Width="148.5" Source="message2.png"/>
-            <TextBlock x:Name="messageText_Copy2" HorizontalAlignment="Left" Height="43.2" Margin="480,595.047,0,0" TextWrapping="Wrap" Text="Memories" VerticalAlignment="Top" Width="85.2" FontSize="16" FontWeight="Bold"/>
+            <TextBlock x:Name="messageText_Copy2" HorizontalAlignment="Left" Height="43.2" Margin="490.672,601.05,0,0" TextWrapping="Wrap" Text="Memories" VerticalAlignment="Top" Width="85.2" FontSize="16" FontWeight="Bold"/>
         </Grid>
         <Grid x:Name="DietPlan" HorizontalAlignment="Left" Height="800" Margin="-0.609,1.453,0,-1.453" VerticalAlignment="Top" Width="600" d:IsHidden="True">
             <Grid x:Name="Diet" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
@@ -195,16 +196,52 @@
                 <Image HorizontalAlignment="Left" Height="42.4" Margin="526.209,8.547,0,0" VerticalAlignment="Top" Width="46.4" Source="exit.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_27"/>
             </Grid>
         </Grid>
-        <Grid x:Name="SleepCycle" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
-            <Grid x:Name="Today" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
-                <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
-                <Label Content="Today" HorizontalAlignment="Center" Height="61.5" Margin="242.359,100.094,275.141,0" VerticalAlignment="Top" Width="82.5" FontSize="24" RenderTransformOrigin="0.32,0.415"/>
-                <Image HorizontalAlignment="Left" Height="54" Margin="481.718,676.094,0,0" VerticalAlignment="Top" Width="61.5" Source="rightArrow.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_6"/>
+        <Grid x:Name="SleepCycle" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
+            <Grid x:Name="Today" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True">
+                <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2" d:IsLocked="True"/>
+                <Label Content="Today" HorizontalAlignment="Center" Height="61.5" Margin="242.359,100.094,275.141,0" VerticalAlignment="Top" Width="82.5" FontSize="24" RenderTransformOrigin="0.32,0.415" d:IsLocked="True"/>
+                <Image HorizontalAlignment="Left" Height="54" Margin="481.718,676.094,0,0" VerticalAlignment="Top" Width="61.5" Source="rightArrow.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_6" d:IsLocked="True"/>
+                <Path Data="M132.29607,535.18753 L132.29607,158.1305" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="378.058" Margin="99.436,162.583,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="5" StrokeThickness="5"/>
+                <Path Data="M99.436,540.641 L513.7803,540.641" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="5" Margin="97.436,538.641,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="419.344"/>
+                <Path Data="M102.60858,358.54698 C130.78679,358.15561 126.19188,367.10283 144.17107,336.28136 156.78566,314.65634 160.27506,304.48201 186.7176,296.92699 213.24712,289.34713 223.33608,314.34452 245.10853,328.85949 263.79838,341.31939 272.59427,345.18761 297.06163,345.18761 319.946,345.18761 326.52527,317.33737 346.58137,304.5744 365.73392,292.38641 373.82801,298.20217 396.75738,310.7091 411.08779,318.52569 416.1534,346.21496 432.13971,352.60948 449.0599,359.37756 463.21112,347.10535&#xA;480.71768,344.26054" HorizontalAlignment="Left" Height="68.936" Margin="100.609,293.528,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="383.109"/>
+                <Path Data="M99.884667,166.094 C96.483456,170.07591 94.227226,172.93816 91.218,177.42733" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="16.333" Margin="89.218,164.094,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="13.667"/>
+                <Path Data="M100.55133,165.42733 C106.33379,169.11826 111.48158,171.7881 117.218,175.42733" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="98.551,163.427,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="21.667"/>
+                <Path Data="M503.218,527.42733 C506.99122,533.26974 507.48375,533.92363 513.218,538.094" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15.667" Margin="501.218,525.427,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="15"/>
+                <Path Data="M513.88467,540.094 C510.43362,544.59791 508.36521,548.35087 505.88467,553.42733" Fill="#FF2929B6" HorizontalAlignment="Left" Height="18.333" Margin="503.885,538.094,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="13"/>
+                <Path Data="M158.218,541.094 L158.218,525.39512" HorizontalAlignment="Left" Height="20.699" Margin="156.218,523.395,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M158.218,541.094 L158.218,525.39512" HorizontalAlignment="Left" Height="20.699" Margin="208.218,523.395,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M158.218,541.094 L158.218,525.39512" HorizontalAlignment="Left" Height="20.699" Margin="258.218,523.395,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M158.218,541.094 L158.218,525.39512" HorizontalAlignment="Left" Height="20.699" Margin="302.218,523.395,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M158.218,541.094 L158.218,525.39512" HorizontalAlignment="Left" Height="20.699" Margin="343.218,523.395,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M158.218,541.094 L158.218,525.39512" HorizontalAlignment="Left" Height="20.699" Margin="381.218,523.395,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M158.218,541.094 L158.218,525.39512" HorizontalAlignment="Left" Height="20.699" Margin="421.218,523.395,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M158.218,541.094 L158.218,525.39512" HorizontalAlignment="Left" Height="20.699" Margin="463.218,523.395,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Label Content="00: 00 am" HorizontalAlignment="Left" Height="24.667" Margin="136.718,556.427,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="55.5"/>
+                <Label Content="7:00 am" HorizontalAlignment="Left" Height="24.667" Margin="443.385,556.427,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="55.5"/>
+                <Path Data="M100.609,222.094 L89.218,222.094" HorizontalAlignment="Left" Height="5" Margin="87.218,286.094,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="16.391"/>
+                <Path Data="M100.609,222.094 L89.218,222.094" HorizontalAlignment="Left" Height="5" Margin="87.218,412.094,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="16.391"/>
+                <Label Content="1 h" HorizontalAlignment="Left" Height="26" Margin="48.718,277.094,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="33.5" FontSize="16"/>
+                <Label Content="1/2 h" HorizontalAlignment="Left" Height="26" Margin="48.718,404.144,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="33.5" RenderTransformOrigin="0.745,1.269"/>
             </Grid>
-            <Grid x:Name="Week" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600">
-                <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
-                <Label Content="This week" HorizontalAlignment="Center" Height="72" Margin="234.859,92.594,228.641,0" VerticalAlignment="Top" Width="136.5" FontSize="24" RenderTransformOrigin="0.32,0.415"/>
-                <Image HorizontalAlignment="Left" Height="61.5" Margin="39.218,56.594,0,0" VerticalAlignment="Top" Width="64.5" Source="back.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_4"/>
+            <Grid x:Name="Week" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True">
+                <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2" d:IsLocked="True"/>
+                <Label Content="This week" HorizontalAlignment="Center" Height="72" Margin="234.859,92.594,228.641,0" VerticalAlignment="Top" Width="136.5" FontSize="24" RenderTransformOrigin="0.32,0.415" d:IsLocked="True"/>
+                <Image HorizontalAlignment="Left" Height="61.5" Margin="39.218,56.594,0,0" VerticalAlignment="Top" Width="64.5" Source="back.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_4" d:IsLocked="True"/>
+                <Path Data="M132.29607,535.18753 L132.29607,158.1305" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="378.058" Margin="99.436,162.583,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="5" StrokeThickness="5"/>
+                <Path Data="M99.436,540.641 L513.7803,540.641" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="5" Margin="97.436,538.641,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="419.344"/>
+                <Path Data="M102.60858,358.54698 C130.78679,358.15561 126.19188,367.10283 144.17107,336.28136 156.78566,314.65634 160.27506,304.48201 186.7176,296.92699 213.24712,289.34713 223.33608,314.34452 245.10853,328.85949 263.79838,341.31939 272.59427,345.18761 297.06163,345.18761 319.946,345.18761 326.52527,317.33737 346.58137,304.5744 365.73392,292.38641 373.82801,298.20217 396.75738,310.7091 411.08779,318.52569 416.1534,346.21496 432.13971,352.60948 449.0599,359.37756 463.21112,347.10535&#xA;480.71768,344.26054" HorizontalAlignment="Left" Height="68.936" Margin="100.609,293.528,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="383.109"/>
+                <Path Data="M99.884667,166.094 C96.483456,170.07591 94.227226,172.93816 91.218,177.42733" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="16.333" Margin="89.218,164.094,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="13.667"/>
+                <Path Data="M100.55133,165.42733 C106.33379,169.11826 111.48158,171.7881 117.218,175.42733" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="98.551,163.427,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="21.667"/>
+                <Path Data="M503.218,527.42733 C506.99122,533.26974 507.48375,533.92363 513.218,538.094" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15.667" Margin="501.218,525.427,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="15"/>
+                <Path Data="M513.88467,540.094 C510.43362,544.59791 508.36521,548.35087 505.88467,553.42733" Fill="#FF2929B6" HorizontalAlignment="Left" Height="18.333" Margin="503.885,538.094,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="13"/>
+                <Path Data="M136.718,358.82527 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="250.113" Margin="203.579,293.528,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M136.718,358.82527 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="209.061" Margin="263.434,337.533,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M136.718,358.82527 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="219.061" Margin="324.098,324.58,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M136.718,358.82527 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="234.394" Margin="388.175,306.7,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M136.718,358.82527 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="191.061" Margin="442.701,352.58,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="6.333"/>
+                <Path Data="M136.718,358.82527 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="219.061" Margin="147.439,327.533,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M136.718,358.82527 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="209.061" Margin="491.218,337.533,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M105.609,302.547 C114.27567,302.547 122.94233,302.547 131.609,302.547 141.27253,302.547 150.48279,310.56907 159.609,315.547 175.51832,324.22481 183.55849,340.30659 197.609,351.547 219.60098,369.14059 217.07353,357.08247 241.609,332.547 264.60815,309.54785 253.66947,313.547 295.609,313.547 319.25839,313.547 336.71908,315.1525 357.609,326.547 364.56582,330.34163 371.75061,334.54627 378.609,338.547 386.79781,343.3238 393.74433,343.547&#xD;&#xA;404.609,343.547 425.49011,343.547 430.12512,321.94055 448.609,314.547 465.82724,307.6597 481.51576,306.20879 498.609,301.547" HorizontalAlignment="Left" Height="63.348" Margin="103.609,299.547,0,0" StrokeStartLineCap="Round" Stretch="Fill" StrokeEndLineCap="Round" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="398" StrokeDashArray="2 1"/>
             </Grid>
         </Grid>
         <Grid x:Name="Reminder" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
@@ -232,18 +269,76 @@
                 <TextBlock HorizontalAlignment="Left" Height="34.667" Margin="117.885,98.861,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="81.333" FontSize="24"><Run Text="Weight"/><LineBreak/><Run/></TextBlock>
                 <Path Data="M47.218,56.094 L99.256447,56.094" HorizontalAlignment="Left" Height="10" Margin="47.218,112.761,0,0" Stretch="Fill" Stroke="#FF5AA3F5" VerticalAlignment="Top" Width="53.038" StrokeThickness="10"/>
             </Grid>
-            <Grid x:Name="Nutrition" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
-                <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
-                <Image HorizontalAlignment="Left" Height="56.4" Margin="38.318,22.694,0,0" VerticalAlignment="Top" Width="62.118" Source="back.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_8"/>
-                <Image HorizontalAlignment="Left" Height="54" Margin="483.718,676.094,0,0" VerticalAlignment="Top" Width="55.2" MouseLeftButtonDown="Image_MouseLeftButtonDown_12" Source="rightArrow.png"/>
-                <TextBlock HorizontalAlignment="Left" Height="60" Margin="160.718,86.294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" FontSize="24" Text="Nutrition"/>
-                <Button Content="Report" HorizontalAlignment="Left" Height="54" Margin="214.918,676.094,0,0" VerticalAlignment="Top" Width="207.6" FontSize="24" Click="Button_Click_1"/>
+            <Grid x:Name="Nutrition" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
+                <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2" d:IsLocked="True"/>
+                <Image HorizontalAlignment="Left" Height="56.4" Margin="38.318,22.694,0,0" VerticalAlignment="Top" Width="62.118" Source="back.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_8" d:IsLocked="True"/>
+                <Image HorizontalAlignment="Left" Height="54" Margin="483.718,676.094,0,0" VerticalAlignment="Top" Width="55.2" MouseLeftButtonDown="Image_MouseLeftButtonDown_12" Source="rightArrow.png" d:IsLocked="True"/>
+                <TextBlock HorizontalAlignment="Left" Height="60" Margin="224.098,86.294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" FontSize="24" Text="Nutrition"/>
+                <Button Content="Report" HorizontalAlignment="Left" Height="54" Margin="214.918,676.094,0,0" VerticalAlignment="Top" Width="207.6" FontSize="24" Click="Button_Click_1" d:IsLocked="True"/>
+                <Path Data="M132.29607,535.18753 L132.29607,158.1305" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="378.058" Margin="99.436,162.583,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="5" StrokeThickness="5"/>
+                <Path Data="M99.436,540.641 L513.7803,540.641" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="5" Margin="97.436,538.641,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="419.344"/>
+                <Path Data="M102.60858,358.54698 C130.78679,358.15561 126.19188,367.10283 144.17107,336.28136 156.78566,314.65634 160.27506,304.48201 186.7176,296.92699 213.24712,289.34713 223.33608,314.34452 245.10853,328.85949 263.79838,341.31939 272.59427,345.18761 297.06163,345.18761 319.946,345.18761 326.52527,317.33737 346.58137,304.5744 365.73392,292.38641 373.82801,298.20217 396.75738,310.7091 411.08779,318.52569 416.1534,346.21496 432.13971,352.60948 449.0599,359.37756 463.21112,347.10535&#xD;&#xA;480.71768,344.26054" HorizontalAlignment="Left" Height="68.936" Margin="100.609,293.528,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="383.109"/>
+                <Path Data="M2.5000029,2.5000032 L375.70399,2.5000032" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="5" Margin="101.5,327.533,0,0" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="378.204" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeDashOffset="5" StrokeDashArray="1 2"/>
+                <Path Data="M99.884667,166.094 C96.483456,170.07591 94.227226,172.93816 91.218,177.42733" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="16.333" Margin="89.218,164.094,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="13.667"/>
+                <Path Data="M100.55133,165.42733 C106.33379,169.11826 111.48158,171.7881 117.218,175.42733" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="98.551,163.427,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="21.667"/>
+                <Path Data="M503.218,527.42733 C506.99122,533.26974 507.48375,533.92363 513.218,538.094" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15.667" Margin="501.218,525.427,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="15"/>
+                <Path Data="M513.88467,540.094 C510.43362,544.59791 508.36521,548.35087 505.88467,553.42733" Fill="#FF2929B6" HorizontalAlignment="Left" Height="18.333" Margin="503.885,538.094,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="13"/>
+                <Path Data="M136.718,358.82527 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="250.113" Margin="200.579,293.528,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M136.718,358.82527 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="198.311" Margin="295.098,345.33,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M136.718,358.82527 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="237.811" Margin="388.711,305.83,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="6.99" RenderTransformOrigin="0.5,0.5">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path Data="M136.718,358.82527 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="209.061" Margin="476.218,337.533,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Label Content="Week 1 &#xD;&#xA;" HorizontalAlignment="Left" Height="35" Margin="120.609,556.547,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="18"/>
+                <Path Data="M411.609,179.547 L454.609,179.547" HorizontalAlignment="Left" Height="5" Margin="409.609,177.547,0,0" StrokeStartLineCap="Round" Stretch="Fill" StrokeEndLineCap="Round" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="48" StrokeDashArray="{x:Null}"/>
+                <Path Data="M411.609,179.547 L454.609,179.547" HorizontalAlignment="Left" Height="5" Margin="409.609,211.547,0,0" StrokeStartLineCap="Round" Stretch="Fill" StrokeEndLineCap="Round" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="48" StrokeDashArray="2 1"/>
+                <Label Content="This week" HorizontalAlignment="Left" Height="35" Margin="471.609,165.28,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="72" FontSize="16"/>
+                <Label Content="Standard" HorizontalAlignment="Left" Height="35" Margin="471.609,199.28,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="72" FontSize="16"/>
+                <Label Content="Week 2 &#xA;" HorizontalAlignment="Left" Height="35" Margin="224.098,556.547,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="18"/>
+                <Label Content="Week 3 &#xA;" HorizontalAlignment="Left" Height="35" Margin="326.109,556.547,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="18"/>
+                <Label Content="Week 4&#xA;" HorizontalAlignment="Left" Height="35" Margin="409.609,556.547,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="18"/>
             </Grid>
-            <Grid x:Name="Sleeping" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
+            <Grid x:Name="Sleeping" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsLocked="True" d:IsHidden="True">
                 <Image HorizontalAlignment="Left" Height="54" Margin="58.718,676.094,0,0" VerticalAlignment="Top" Width="78" Source="home.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_2"/>
                 <Image HorizontalAlignment="Left" Height="56.4" Margin="38.318,22.694,0,0" VerticalAlignment="Top" Width="62.118" Source="back.png" MouseLeftButtonDown="Image_MouseLeftButtonDown_9" d:IsLocked="True"/>
                 <TextBlock HorizontalAlignment="Left" Height="60" Margin="160.718,86.294,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="281" FontSize="24" Text="Sleeping hours"/>
                 <Button Content="Report" HorizontalAlignment="Left" Height="54" Margin="214.918,676.094,0,0" VerticalAlignment="Top" Width="207.6" FontSize="24" Click="Button_Click_1"/>
+                <Path Data="M132.29607,535.18753 L132.29607,158.1305" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="378.058" Margin="99.436,162.583,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="5" StrokeThickness="5"/>
+                <Path Data="M99.436,540.641 L513.7803,540.641" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="5" Margin="97.436,538.641,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="419.344"/>
+                <Path Data="M2.5000029,2.5000032 L375.70399,2.5000032" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="5" Margin="101.5,327.533,0,0" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="378.204" StrokeStartLineCap="Round" StrokeEndLineCap="Round" StrokeDashCap="Round" StrokeDashOffset="5" StrokeDashArray="1 2"/>
+                <Path Data="M99.884667,166.094 C96.483456,170.07591 94.227226,172.93816 91.218,177.42733" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="16.333" Margin="89.218,164.094,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="13.667"/>
+                <Path Data="M100.55133,165.42733 C106.33379,169.11826 111.48158,171.7881 117.218,175.42733" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15" Margin="98.551,163.427,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="21.667"/>
+                <Path Data="M503.218,527.42733 C506.99122,533.26974 507.48375,533.92363 513.218,538.094" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="15.667" Margin="501.218,525.427,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="15"/>
+                <Path Data="M513.88467,540.094 C510.43362,544.59791 508.36521,548.35087 505.88467,553.42733" Fill="#FF2929B6" HorizontalAlignment="Left" Height="18.333" Margin="503.885,538.094,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="13"/>
+                <Path Data="M136.718,350.84534 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="261.547" Margin="200.579,282.094,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M136.718,358.82527 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="198.311" Margin="295.098,345.33,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Path Data="M137.69263,334.03638 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="271.547" Margin="388.711,272.094,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="7.983" RenderTransformOrigin="0.5,0.5">
+                    <Path.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="-1"/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform X="-0.99300000000000033"/>
+                        </TransformGroup>
+                    </Path.RenderTransform>
+                </Path>
+                <Path Data="M136.718,358.82527 L134.76482,529.89247" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="209.061" Margin="475.718,337.533,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="5"/>
+                <Label Content="Week 1 &#xA;" HorizontalAlignment="Left" Height="35" Margin="120.609,556.547,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="18"/>
+                <Path Data="M411.609,179.547 L454.609,179.547" HorizontalAlignment="Left" Height="5" Margin="409.609,177.547,0,0" StrokeStartLineCap="Round" Stretch="Fill" StrokeEndLineCap="Round" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="48" StrokeDashArray="{x:Null}"/>
+                <Path Data="M411.609,179.547 L454.609,179.547" HorizontalAlignment="Left" Height="5" Margin="409.609,211.547,0,0" StrokeStartLineCap="Round" Stretch="Fill" StrokeEndLineCap="Round" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="48" StrokeDashArray="2 1"/>
+                <Label Content="This week" HorizontalAlignment="Left" Height="35" Margin="471.609,165.28,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="72" FontSize="16"/>
+                <Label Content="Standard" HorizontalAlignment="Left" Height="35" Margin="471.609,199.28,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="72" FontSize="16"/>
+                <Label Content="Week 2 &#xA;" HorizontalAlignment="Left" Height="35" Margin="224.098,556.547,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="18"/>
+                <Label Content="Week 3 &#xA;" HorizontalAlignment="Left" Height="35" Margin="326.109,556.547,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="18"/>
+                <Label Content="Week 4&#xA;" HorizontalAlignment="Left" Height="35" Margin="409.609,556.547,0,0" Style="{DynamicResource SimpleLabel}" VerticalAlignment="Top" Width="76" FontSize="18"/>
+                <Path Data="M103.25644,251.77756 C131.40792,251.77756 153.8136,251.64901 178.75644,268.27756 185.66788,272.88519 196.00714,278.34163 202.33555,284.67003 207.22881,289.5633 210.74275,293.82318 214.83555,299.67003 223.85215,312.5509 231.13598,321.79184 241.218,332.594 252.44462,344.62253 259.43901,348.594 278.718,348.594 288.92215,348.594 295.69251,347.4042 305.218,343.594 317.84225,338.5443 325.9128,328.05179 334.218,315.594 341.03578,305.36733 345.82086,292.49095&#xD;&#xA;354.71814,283.59368 364.54684,273.76498 367.6892,272.09362 382.7181,272.09362 394.39463,272.09362 401.19158,280.93561 409.71807,291.59372 416.9649,300.65225 420.58083,309.61813 429.718,317.094 445.36587,329.8968 457.43878,337.34368 480.218,337.594" HorizontalAlignment="Left" Height="101.816" Margin="101.256,249.778,0,0" Stretch="Fill" Stroke="Black" StrokeThickness="5" VerticalAlignment="Top" Width="381.962"/>
             </Grid>
         </Grid>
         <Grid x:Name="Report" HorizontalAlignment="Left" Height="800" Margin="-0.609,-0.547,0,0" VerticalAlignment="Top" Width="600" d:IsHidden="True">
@@ -482,7 +577,6 @@
             <TextBox HorizontalAlignment="Left" Height="34.4" Margin="321.309,569.8,0,0" TextWrapping="Wrap" Text="500g" VerticalAlignment="Top" Width="74.57" FontSize="24" BorderBrush="{x:Null}"/>
             <TextBox HorizontalAlignment="Left" Height="34.4" Margin="485.879,569.8,0,0" TextWrapping="Wrap" Text="120g" VerticalAlignment="Top" Width="73.4" FontSize="24" BorderBrush="{x:Null}"/>
         </Grid>
-        <Button Content="register" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Margin="223.5,639,0,0" Height="55.96" FontSize="24"/>
 
     </Grid>
 </Window>

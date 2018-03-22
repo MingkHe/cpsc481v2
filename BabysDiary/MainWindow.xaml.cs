@@ -25,8 +25,19 @@ namespace BabysDiary
             InitializeComponent();
             SetAllInvisible();
             Login.Visibility = Visibility.Visible;
+
             message.Visibility = Visibility.Hidden;
             messageText.Visibility = Visibility.Hidden;
+
+            message_Copy.Visibility = Visibility.Hidden;
+            messageText_Copy.Visibility = Visibility.Hidden;
+
+            message_Copy1.Visibility = Visibility.Hidden;
+            messageText_Copy1.Visibility = Visibility.Hidden;
+
+            message_Copy2.Visibility = Visibility.Hidden;
+            messageText_Copy2.Visibility = Visibility.Hidden;
+
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
@@ -600,6 +611,19 @@ namespace BabysDiary
         {
             message_Copy2.Visibility = Visibility.Hidden;
             messageText_Copy2.Visibility = Visibility.Hidden;
+        }
+
+
+        private void RegisterButton_Click(object sender, RoutedEventArgs e)
+        {
+            SetAllInvisible();
+            Register.Visibility = Visibility.Visible;
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            SetAllInvisible();
+            Login.Visibility = Visibility.Visible;
         }
     }
 }
