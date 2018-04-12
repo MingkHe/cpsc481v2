@@ -184,6 +184,7 @@
     <Resource Include="sun.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="ToggleOff.png" />
     <Resource Include="ToggleOn.png" />
     <Resource Include="pork.png" />
     <Resource Include="rice.png" />

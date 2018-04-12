@@ -21,14 +21,15 @@ namespace BabysDiary
     public partial class MainWindow : Window
     {
         int smartCounter = 0;
+        int smartCounter2 = 0;
         public MainWindow()
         {
             InitializeComponent();
             SetAllInvisible();
             Login.Visibility = Visibility.Visible;
 
-            message.Visibility = Visibility.Hidden;
-            messageText.Visibility = Visibility.Hidden;
+            message.Visibility = Visibility.Visible;
+            messageText.Visibility = Visibility.Visible;
 
             message_Copy.Visibility = Visibility.Hidden;
             messageText_Copy.Visibility = Visibility.Hidden;
@@ -528,17 +529,6 @@ namespace BabysDiary
             ReportH.Visibility = Visibility.Visible;
         }
 
-        private void message_MouseEnter(object sender, MouseEventArgs e)
-        {
-            message.Visibility = Visibility.Visible;
-            messageText.Visibility = Visibility.Visible;
-        }
-
-        private void message_MouseLeave(object sender, MouseEventArgs e)
-        {
-            message.Visibility = Visibility.Hidden;
-            messageText.Visibility = Visibility.Hidden;
-        }
 
         private void Image_MouseLeftButtonDown_24(object sender, MouseButtonEventArgs e)
         {
@@ -550,6 +540,8 @@ namespace BabysDiary
         {
             SetAllInvisible();
             Home.Visibility = Visibility.Visible;
+            message.Visibility = Visibility.Hidden;
+            messageText.Visibility = Visibility.Hidden;
         }
 
         private void Image_MouseLeftButtonDown_26(object sender, MouseButtonEventArgs e)
@@ -683,6 +675,32 @@ namespace BabysDiary
                 result.Text = "Everything is good but maybe try to eat more strawberries";
             }
 
+        }
+
+        private void Image_MouseLeftButtonDown_33(object sender, MouseButtonEventArgs e)
+        {
+            System.Uri off;
+            off = new Uri("ToggleOff.png", UriKind.Relative);
+            System.Uri on;
+            on = new Uri("ToggleOn.png", UriKind.Relative);
+
+
+            if (smartCounter2 == 0)
+            {
+                smartCounter2++;
+                smartCounter2 = smartCounter2 % 2;
+                ((Image)sender).Source = new BitmapImage(off);
+                reminderBox.Foreground = new SolidColorBrush(Colors.Gray);
+
+            }
+            else
+            {
+                smartCounter2++;
+                smartCounter2 = smartCounter2 % 2;
+                ((Image)sender).Source = new BitmapImage(on);
+                reminderBox.Foreground = new SolidColorBrush(Colors.Black);
+            }
+           
         }
     }
 }
