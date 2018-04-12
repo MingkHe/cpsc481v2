@@ -20,6 +20,7 @@ namespace BabysDiary
     /// </summary>
     public partial class MainWindow : Window
     {
+        int smartCounter = 0;
         public MainWindow()
         {
             InitializeComponent();
@@ -37,6 +38,10 @@ namespace BabysDiary
 
             message_Copy2.Visibility = Visibility.Hidden;
             messageText_Copy2.Visibility = Visibility.Hidden;
+
+            //Password= true;
+
+            
 
         }
 
@@ -71,7 +76,6 @@ namespace BabysDiary
         private void SetSetUpInvisible()
         {
             SetUp1.Visibility = Visibility.Hidden;
-            SetUp2.Visibility = Visibility.Hidden;
             SetUp3.Visibility = Visibility.Hidden;
             SetUp4.Visibility = Visibility.Hidden;
             SetUp5.Visibility = Visibility.Hidden;
@@ -137,13 +141,6 @@ namespace BabysDiary
 
         }
 
-        private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            SetAllInvisible();
-            SetUp.Visibility = Visibility.Visible;
-            SetSetUpInvisible();
-            SetUp2.Visibility = Visibility.Visible;
-        }
 
         private void left_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
@@ -166,7 +163,7 @@ namespace BabysDiary
             SetAllInvisible();
             SetUp.Visibility = Visibility.Visible;
             SetSetUpInvisible();
-            SetUp2.Visibility = Visibility.Visible;
+            SetUp1.Visibility = Visibility.Visible;
         }
 
         private void right_Copy_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
@@ -624,6 +621,68 @@ namespace BabysDiary
         {
             SetAllInvisible();
             Login.Visibility = Visibility.Visible;
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            SetAllInvisible();
+            Login.Visibility = Visibility.Visible;
+
+        }
+
+        private void Image_MouseLeftButtonDown_29(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            Login.Visibility = Visibility.Visible;
+        }
+
+        private void Image_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            DietPlan.Visibility = Visibility.Visible;
+            SetDietPlanInvisible();
+            Diet.Visibility = Visibility.Visible;
+            add1.Source = ((Image)sender).Source;
+            add1_Copy.Visibility = Visibility.Visible;
+            showupLabel.Visibility = Visibility.Visible;
+        }
+
+        private void Image_MouseLeftButtonDown_30(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            DietPlan.Visibility = Visibility.Visible;
+            SetDietPlanInvisible();
+            Change.Visibility = Visibility.Visible;
+
+        }
+
+        private void Image_MouseLeftButtonDown_31(object sender, MouseButtonEventArgs e)
+        {
+            SetAllInvisible();
+            DietPlan.Visibility = Visibility.Visible;
+            SetDietPlanInvisible();
+            Diet.Visibility = Visibility.Visible;
+            bread.Source = ((Image)sender).Source;
+        }
+
+        private void Image_MouseLeftButtonDown_32(object sender, MouseButtonEventArgs e)
+        {
+            smartCounter++;
+            smartCounter = smartCounter % 3;
+            if (smartCounter == 0)
+            {
+                result.Text = "Your baby is growing in the right track!!";
+
+            }
+            else if(smartCounter == 1)
+            {
+                result.Text = "Maybe try to adding more vegetables to your diet";
+            }
+            else
+            {
+                result.Text = "Everything is good but maybe try to eat more strawberries";
+            }
+
         }
     }
 }
